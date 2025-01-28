@@ -13,7 +13,7 @@ function App() {
         <section className="relative min-h-screen bg-gradient-to-br from-blue-500 to-indigo-600 text-white">
           {/* Pin the content to the top-left */}
           <div className="absolute top-0 left-0 p-4">
-            <h1 className="text-4xl font-bold mb-2">Hi, I'm Firat Kayaaojfeojfwen</h1>
+            <h1 className="text-4xl font-bold mb-2">Hi, I'm Firat kaya gamedev</h1>
             <p className="text-lg mb-4">
               A passionate programmer specializing in web development, game development, and software engineering.
             </p>
