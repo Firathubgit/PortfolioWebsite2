@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.hero {
+  padding: 2rem 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Rectangle.css */
+.rectangle {
+  width: 900px;
+  /* Adjust to desired width */
+  height: 180px;
+  /* Adjust to desired height */
+  background-color: rgba(0, 0, 0, 0);
+  /* Rectangle background */
+  border: 2px solid rgb(50, 50, 50);
+  /* White border */
+  box-sizing: border-box;
+  /* Ensures padding/border don’t overflow */
+  /* Centers vertically */
+  position: relative;
+
+  margin: 40px auto;
+  /* This will center horizontally */
+}
+
+/* Put the squares in the top-right corner. */
+.social-links {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  /* so squares appear side-by-side */
+  gap: 10px;
+  /* space between squares */
+}
+
+/* Style each square */
+.square {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  display: inline-block;
+  /* optionally, add a hover effect */
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #070707;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 130px;
+  margin-left: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+  flex: 4;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  max-width: 710px;
+  display: flex;
+  /* remove the quotes here! */
+  align-items: center;
+  gap: 0rem;
+  margin-bottom: -0.5rem;
+}
+
+
+
+.waveimg {
+  width: 40px;
+  height: auto;
+  transform-origin: 70% 70%; 
+  /* Flip horizontally + start rotation at 0 deg */
+  transform: scaleX(-1) rotate(0deg);  
+
+  /* Continue with the wave animation as usual */
+  animation: wave 2.5s infinite ease-in-out;
+}
+/* Define keyframes for a ‘wave’ effect */
+@keyframes wave {
+  0%   { transform: scaleX(-1) rotate(0deg); }
+  10%  { transform: scaleX(-1) rotate(14deg); }
+  20%  { transform: scaleX(-1) rotate(-8deg); }
+  30%  { transform: scaleX(-1) rotate(14deg); }
+  40%  { transform: scaleX(-1) rotate(-4deg); }
+  50%  { transform: scaleX(-1) rotate(10deg); }
+  60%  { transform: scaleX(-1) rotate(0deg); }
+  100% { transform: scaleX(-1) rotate(0deg); }
+}
+
+.location {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0.4rem;
+}
+
+.bio {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  max-width: 650px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
