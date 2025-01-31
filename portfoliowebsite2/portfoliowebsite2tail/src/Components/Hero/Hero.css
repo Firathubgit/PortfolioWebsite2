@@ -5,6 +5,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
+
+
 /* Rectangle.css */
 .rectangle {
   width: 900px;
@@ -13,7 +15,7 @@
   /* Adjust to desired height */
   background-color: rgba(0, 0, 0, 0);
   /* Rectangle background */
-  border: 2px solid rgb(50, 50, 50);
+  border: 2px solid rgb(255, 255, 255);
   /* White border */
   box-sizing: border-box;
   /* Ensures padding/border don’t overflow */
@@ -22,6 +24,12 @@
 
   margin: 40px auto;
   /* This will center horizontally */
+  transform: scale(1.00);
+  transition: all 0.3s;
+}
+
+.rectangle:hover{
+  transform: scale(1.01);
 }
 
 /* Put the squares in the top-right corner. */
@@ -35,18 +43,24 @@
   /* space between squares */
 }
 
+
+
 /* Style each square */
 .square {
   width: 30px;
   height: 30px;
   border-radius: 3px;
   display: inline-block;
-  /* optionally, add a hover effect */
-  transition: background-color 0.3s ease;
+  transform: scale(1.00);
+  transition: all 0.3s;
 }
 
 .square:hover {
-  background-color: #070707;
+  transform: scale(1.2);
+}
+
+.square:active{
+  transform: scale(1.1);
 }
 
 .hero-content {

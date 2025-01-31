@@ -1,0 +1,21 @@
+.pill {
+    width: 200px;
+    height: 60px;
+    background-color: #000000; /* black background */
+    border: 4px solid #ffffff; /* white border */
+    border-radius: 20px;     /* large radius for a pill shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transform: scale(1.00);
+    transition: all 0.3s;
+  }
+
+  .pill:hover {
+    transform: scale(1.05);
+  }
+  .pill span {
+    color: #ffffff; /* white text */
+    font-size: 1.1rem;
+  }
