@@ -15,6 +15,11 @@
   .pill:hover {
     transform: scale(1.05);
   }
+
+  .pill:active {
+    transform: scale(1.0);
+  }
+  
   .pill span {
     color: #ffffff; /* white text */
     font-size: 1.1rem;

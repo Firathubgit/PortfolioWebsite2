@@ -1,6 +1,8 @@
 import React from "react";
 import "./projects.css";
-import project1Image from "./WackyWarrioirsMainMenu.png";
+import project1Image from "./Wacky4.png";
+import project2Image from "./BrainrotVideoGenerator.png";
+import project3Image from "./BmwShopify.png";
 
 const Projects = () => {
   return (
@@ -26,39 +28,47 @@ const Projects = () => {
 
       <div className="projets-item">
         <div className="project-image">
-          <img src="https://placekitten.com/900/450" alt="Project preview" />
+          <img src={project2Image} alt="Project preview" />
           {/* Gradient overlay */}
           <div className="gradient-overlay"></div>
         </div>
 
         <div className="project-content">
-          <h3 className="project-title">Blä blä blä</h3>
-          <p className="project-stack">Next.js | React | TypeScript | Sass</p>
+          <h3 className="project-title">Brainrot Video Generator</h3>
+          <p className="project-stack">Python | ElevenLabs | MoviePy | Whisper | HTML</p>
           <p className="project-description">
-            Website for a gaming server called zibbi, featuring frequent updates,
-            fun events, and a great community.
+          AI-powered Flask app that creates Brainrot TikTok videos by combining ChatGPT, ElevenLabs, Whisper, and MoviePy for Amazing output of scripting, voiceovers, transcription, and video creation all into one video
           </p>
-          <a href="#learn-more" className="learn-more">Learn more →</a>
+          <a href="#learn-more" className="learn-more">Learn more</a>
         </div>
       </div>
 
       <div className="projets-item">
         <div className="project-image">
-          <img src="https://placekitten.com/900/450" alt="Project preview" />
+          <img src={project3Image} alt="Project preview" />
           {/* Gradient overlay */}
           <div className="gradient-overlay"></div>
         </div>
 
         <div className="project-content">
-          <h3 className="project-title">imshi Web</h3>
-          <p className="project-stack">Next.js | React | TypeScript | Sass</p>
+          <h3 className="project-title">Custom Steering Wheel Shop</h3>
+          <p className="project-stack">React | Tailwind CSS | Node.js | Figma </p>
           <p className="project-description">
-            Website for a gaming server called dez, featuring frequent updates,
-            fun events, and a great community.
+          A React-based e-commerce platform offering customizable luxury steering wheels. Features material options and immersive camera animations powered by Unity 3D, seamlessly integrated into the website. Designed for automotive enthusiasts with a focus on high-end UI and user experience.
+
+
+
+
+
+
+
+
           </p>
-          <a href="#learn-more" className="learn-more">Learn more →</a>
+          <a href="#learn-more" className="learn-more">Learn more</a>
         </div>
       </div>
+
+<a href="/projects.html" className="more-projects-button">More...</a>
     </section>
   );
 };
