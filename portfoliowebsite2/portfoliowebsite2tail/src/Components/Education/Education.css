@@ -1,28 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 .Education-section {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 0px 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 80px;
-  }
-  
-  .Education-section-title {
-    color: white;
-    margin-bottom: 0px;
-    text-align: left;
-    font-size: 2.5rem;
-    font-weight: 600;
-    
-  }
-  
-  .Education-item {
-    max-width: 900px;
-    width: 900px;
-    height: 450px;
-    background: white;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 50px;
-  }
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 80px;
+}
+
+.Education-section-title {
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Timeline container */
+.timeline {
+  height: 450px;
+  position: relative;
+  margin-left: 30px; /* space for the vertical line */
+  padding-left: 20px;
+  border-left: 4px solid rgb(255, 255, 255); /* the vertical line */
+}
+
+/* Each timeline item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 70px; /* spacing between items */
+  margin-top: 40px;
+}
+
+/* The circle/indicator on the timeline */
+.timeline-icon {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  border: 5px solid #ffffff; /* or some darker color if your background is black */
+  position: absolute;
+  left: -35px;  /* position left so it overlaps the vertical line */
+  top: 0;
+}
+
+/* Content box (the white container) */
+.timeline-content {
+  justify-content: left;
+  padding-left: 20px;
+  max-width: 900px;
+  width: 90%;
+}
+
+.timeline-content h3 {
+  margin: 0 0 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.timeline-content h4 {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #ffffff8c;
+}
+
+.timeline-content p {
+  color: #ffffff;
+  line-height: 1.5;
+  font-weight: 100;
+}

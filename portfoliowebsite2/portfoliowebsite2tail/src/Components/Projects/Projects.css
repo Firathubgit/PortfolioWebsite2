@@ -57,9 +57,10 @@
   bottom: 0;
   /* Example: No gradient for top 40%, then fade to black by 90% */
   background: linear-gradient(
+    
     to bottom,
-    rgba(112, 112, 112, 0.03) 40%,   /* Transparent up to 40% */
-    rgba(0, 0, 0, 0.611) 60%, /* Fade to 0.8 opacity by 90% */
+    rgba(0, 0, 0, 0.116) 40%,   /* Transparent up to 40% */
+    rgba(0, 0, 0, 0.5) 60%, /* Fade to 0.8 opacity by 90% */
     rgb(0, 0, 0) 100%   /* Fully black at 100% */
   );
   z-index: 1;
@@ -130,4 +131,34 @@
 
 .more-projects-button:hover {
   color: #fff;
+}
+
+.LearnMoreButton {
+  cursor: pointer;
+  width: 130px;
+  height: 38px;
+  background-color: #000000; /* black background */
+  border: 3px solid #fdfdfd; /* white border */
+  border-radius: 10px;     /* large radius for a pill shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.00);
+  transition: all 0.3s;
+}
+
+
+
+.LearnMoreButton:active {
+  transform: scale(1.0);
+}
+
+.LearnMoreButton span {
+  color: #ffffff; /* white text */
+  font-weight: 450;
+  font-size: 0.9rem;
+}
+
+.LearnMoreButton:hover {
+  transform: scale(1.05);
 }

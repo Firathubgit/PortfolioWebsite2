@@ -1,26 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 .work-section {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 0px 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 80px;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.work-item {
+  max-width: 900px;
+  width: 900px;
+  background: rgb(255, 255, 255);
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+
+.work-item::before,
+.work-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;       
+  width: 60px;     
+  pointer-events: none; 
+  z-index: 2;     
+}
+
+.work-item::before {
+  left: 0;
+  background: linear-gradient(to right, #000 0%, transparent 100%);
+}
+
+.work-item::after {
+  right: 0;
+  background: linear-gradient(to left, #000 0%, transparent 100%);
+}
+
+.marquee-wrapper {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.marquee-wrapper img {
+  height: 40px;
+  margin: 0 20px;
+  flex-shrink: 0;
+}
+
+/* Pause on hover */
+.marquee-wrapper:hover {
+  animation-play-state: paused;
+}
+
+/* Right-to-left */
+@keyframes marquee-rtl {
+  0% {
+    transform: translateX(0);
   }
-  
-  .section-title {
-    color: white;
-    margin-bottom: 0px;
-    text-align: left;
-    font-size: 2.5rem;
-    font-weight: 600;
+  100% {
+    transform: translateX(-50%);
   }
-  
-  .work-item {
-    max-width: 900px;
-    width: 900px;
-    height: 45px;
-    background: white;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.marquee-rtl {
+  animation-name: marquee-rtl;
+}
+
+/* Left-to-right */
+@keyframes marquee-ltr {
+  0% {
+    transform: translateX(-50%);
   }
+  100% {
+    transform: translateX(0);
+  }
+}
+.marquee-ltr {
+  animation-name: marquee-ltr;
+}

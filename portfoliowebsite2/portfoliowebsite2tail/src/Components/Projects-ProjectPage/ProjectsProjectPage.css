@@ -6,6 +6,7 @@
   padding: 0px 20px;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .projects-section-title {
@@ -130,4 +131,34 @@
 
 .more-projects-button:hover {
   color: #fff;
+}
+
+.LearnMoreButton {
+  cursor: pointer;
+  width: 130px;
+  height: 38px;
+  background-color: #000000; /* black background */
+  border: 3px solid #fdfdfd; /* white border */
+  border-radius: 10px;     /* large radius for a pill shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.00);
+  transition: all 0.3s;
+}
+
+
+
+.LearnMoreButton:active {
+  transform: scale(1.0);
+}
+
+.LearnMoreButton span {
+  color: #ffffff; /* white text */
+  font-weight: 450;
+  font-size: 0.9rem;
+}
+
+.LearnMoreButton:hover {
+  transform: scale(1.05);
 }

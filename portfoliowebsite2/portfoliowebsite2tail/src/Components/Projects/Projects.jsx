@@ -22,7 +22,9 @@ const Projects = () => {
           <p className="project-description">
             2.5D Game that includes multiple arena maps, multiple playable charakters, cross input support, highschool thesis project with over 1 year off devolepment.
           </p>
-          <a href="#learn-more" className="learn-more">Learn more</a>
+          <a className="LearnMoreButton">
+                    <span>Learn more</span>
+                  </a>
         </div>
       </div>
 
@@ -39,7 +41,9 @@ const Projects = () => {
           <p className="project-description">
           AI-powered Flask app that creates Brainrot TikTok videos by combining ChatGPT, ElevenLabs, Whisper, and MoviePy for Amazing output of scripting, voiceovers, transcription, and video creation all into one video
           </p>
-          <a href="#learn-more" className="learn-more">Learn more</a>
+          <a className="LearnMoreButton">
+                    <span>Learn more</span>
+                  </a>
         </div>
       </div>
 
@@ -64,7 +68,9 @@ const Projects = () => {
 
 
           </p>
-          <a href="#learn-more" className="learn-more">Learn more</a>
+          <a className="LearnMoreButton">
+                    <span>Learn more</span>
+                  </a>
         </div>
       </div>
 

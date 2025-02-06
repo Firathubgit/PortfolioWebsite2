@@ -23,7 +23,9 @@ const ProjectsProjectPage = () => {
           <p className="project-description">
             2.5D Game that includes multiple arena maps, multiple playable charakters, cross input support, highschool thesis project with over 1 year off devolepment.
           </p>
-          <a href="#learn-more" className="learn-more">Learn more</a>
+          <a className="LearnMoreButton">
+                    <span>Learn more</span>
+                  </a>
         </div>
       </div>
 
@@ -40,7 +42,9 @@ const ProjectsProjectPage = () => {
           <p className="project-description">
           AI-powered Flask app that creates Brainrot TikTok videos by combining ChatGPT, ElevenLabs, Whisper, and MoviePy for Amazing output of scripting, voiceovers, transcription, and video creation all into one video
           </p>
-          <a href="#learn-more" className="learn-more">Learn more</a>
+          <a className="LearnMoreButton">
+                    <span>Learn more</span>
+                  </a>
         </div>
       </div>
 
@@ -65,7 +69,9 @@ const ProjectsProjectPage = () => {
 
 
           </p>
-          <a href="#learn-more" className="learn-more">Learn more</a>
+          <a className="LearnMoreButton">
+                    <span>Learn more</span>
+                  </a>
         </div>
       </div>
 
@@ -83,7 +89,9 @@ const ProjectsProjectPage = () => {
           <p className="project-description">
           Exhuarire is a 2D sidescroller where players ascend from an eerie sewer to the surface, overcoming obstacles in atmospheric, dynamic environments through an immersive explore intended gamedesign. Lead contributer of the team i was a Project leader in that includes 4 programmers, 4 designers and total of 1 year of development.
           </p>
-          <a href="#learn-more" className="learn-more">Learn more</a>
+          <a className="LearnMoreButton">
+                    <span>Learn more</span>
+                  </a>
         </div>
       </div>
       
@@ -100,7 +108,9 @@ const ProjectsProjectPage = () => {
           <p className="project-description">
             2.5D Game that includes multiple arena maps, multiple playable charakters, cross input support, highschool thesis project with over 1 year off devolepment.
           </p>
-          <a href="#learn-more" className="learn-more">Learn more</a>
+          <a className="LearnMoreButton">
+                    <span>Learn more</span>
+                  </a>
         </div>
       </div>
     </section>
