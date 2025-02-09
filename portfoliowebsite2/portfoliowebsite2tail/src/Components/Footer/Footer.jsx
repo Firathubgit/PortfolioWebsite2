@@ -5,7 +5,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <span>Created with imshi<br/></span>
-        <span>First kaya copyright o sánt</span>
+        <span>First kaya copyright o sánt. </span>
+        <span>icons by Icons8</span>
       </div>
     </footer>
     </>

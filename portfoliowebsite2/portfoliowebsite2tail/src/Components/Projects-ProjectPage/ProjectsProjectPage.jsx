@@ -103,7 +103,7 @@ const ProjectsProjectPage = () => {
         </div>
 
         <div className="project-content">
-          <h3 className="project-title">Wacky warriors</h3>
+          <h3 className="project-title">Gates Of Hell</h3>
           <p className="project-stack">Unity | C# | Figma</p>
           <p className="project-description">
             2.5D Game that includes multiple arena maps, multiple playable charakters, cross input support, highschool thesis project with over 1 year off devolepment.
