@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.projets-section {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.projects-section-title {
+  color: white;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px; /* or whatever spacing you like */
+}
+
+/* The “card” container */
+.projets-item {
+  width: 900px;             /* Fixed width so image stays consistent */
+  height: 450px;            /* Fixed height so it doesn't change size on hover */
+  background: #1a1a1a;      /* Fallback background color */
+  border-radius: 8px;
+  overflow: hidden;         /* Hides zoomed-in edges of the image */
+  position: relative;       /* Absolutely position children */
+  margin-bottom: 40px;      /* Spacing between cards */
+}
+
+/* Image container, absolutely positioned */
+.project-image {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* Ensures the image fills the container */
+  transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.projets-item:hover .project-image img {
+  transform: scale(1.1);
+}
+
+/* The new gradient overlay below the text but over the image */
+.gradient-overlay {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  /* Example: No gradient for top 40%, then fade to black by 90% */
+  background: linear-gradient(
+    to bottom,
+    rgba(112, 112, 112, 0.03) 40%,   /* Transparent up to 40% */
+    rgba(0, 0, 0, 0.611) 60%, /* Fade to 0.8 opacity by 90% */
+    rgb(0, 0, 0) 100%   /* Fully black at 100% */
+  );
+  z-index: 1;
+}
+
+/* Text overlay at the bottom-left, above overlay */
+.project-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;  /* Optional if you want text to wrap nicely */
+  color: #fff;
+  z-index: 2;   /* Ensures content is on top of the overlay */
+}
+
+/* Titles, stacks, descriptions */
+.project-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.project-stack {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+/* “Learn more” button styling */
+.learn-more {
+  width: 125px;
+  height: 35px;
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-flex;               /* Switch to flexbox */
+  align-items: center;               /* Vertically center the text */
+  justify-content: center;
+}
+
+.learn-more:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.more-projects-button {
+  color: rgb(182, 182, 182);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  text-decoration: none;         /* no underline */
+  transition: color 0.2s ease;
+}
+
+.more-projects-button:hover {
+  color: #fff;
+}
+
+.LearnMoreButton {
+  cursor: pointer;
+  width: 130px;
+  height: 38px;
+  background-color: #000000; /* black background */
+  border: 3px solid #fdfdfd; /* white border */
+  border-radius: 10px;     /* large radius for a pill shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.00);
+  transition: all 0.3s;
+}
+
+
+
+.LearnMoreButton:active {
+  transform: scale(1.0);
+}
+
+.LearnMoreButton span {
+  color: #ffffff; /* white text */
+  font-weight: 450;
+  font-size: 0.9rem;
+}
+
+.LearnMoreButton:hover {
+  transform: scale(1.05);
+}
+
+.projects-section-undertitle {
+    margin-top: -25px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 450;
+    color: #ffffff8c;
+  }
