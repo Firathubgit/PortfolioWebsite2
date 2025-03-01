@@ -16,9 +16,17 @@
   font-weight: 600;
 }
 
+.Certificates-section-title {
+  color: rgba(255, 255, 255, 0.8); /* Slightly less white */
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 2rem; /* Slightly smaller font size */
+  font-weight: 600;
+  margin-top: 40px; /* Add some space above the certificates section */
+}
+
 /* Timeline container */
 .timeline {
-  height: 450px;
   position: relative;
   margin-left: 30px; /* space for the vertical line */
   padding-left: 20px;
@@ -71,4 +79,10 @@
   color: #ffffff;
   line-height: 1.5;
   font-weight: 100;
+}
+
+/* Subcategory container */
+.timeline-subcategory {
+  padding-left: 20px;
+  border-left: 2px solid rgba(255, 255, 255, 0.5); /* lighter vertical line */
 }

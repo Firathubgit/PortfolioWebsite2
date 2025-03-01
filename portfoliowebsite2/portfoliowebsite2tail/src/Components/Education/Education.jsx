@@ -43,6 +43,38 @@ const Education = () => {
           </div>
         </div>
       </div>
+
+      <h3 className="Certificates-section-title">Certificates</h3>
+
+      <div className="timeline">
+        {/* === Cisco CCNA 1 Certificate === */}
+        <div className="timeline-item">
+          <div className="timeline-icon"></div>
+          <div className="timeline-content">
+            <h3>Cisco CCNA 1</h3>
+            <h4>CCNA 1 Certificate | 2025</h4>
+            <p>
+              Completed the CCNA 1 certification in 2025, gaining foundational 
+              knowledge in networking, including network fundamentals, IP 
+              addressing, and basic router and switch configuration.
+            </p>
+          </div>
+        </div>
+
+        {/* === Cisco CCNA 2 Certificate === */}
+        <div className="timeline-item">
+          <div className="timeline-icon"></div>
+          <div className="timeline-content">
+            <h3>Cisco CCNA 2</h3>
+            <h4>CCNA 2 Certificate | 2026</h4>
+            <p>
+              Completed the CCNA 2 certification in 2026, advancing my knowledge 
+              in networking, including routing and switching essentials, 
+              network security, and troubleshooting.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
