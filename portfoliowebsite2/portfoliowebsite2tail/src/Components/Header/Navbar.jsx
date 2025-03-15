@@ -1,4 +1,4 @@
-import "./navbar.css"
+import "./Navbar.css"
 import resumePDF from "./ProgrammeringCV.pdf"; 
 const Navbar = () => {
   return (
