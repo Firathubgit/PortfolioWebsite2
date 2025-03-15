@@ -32,7 +32,7 @@ const About = () => {
           I am always eager to learn and explore new technologies while striving to
           create high-quality, optimized software solutions. I also enjoy working
           on game projects, experimenting with AI, and pushing the limits of
-          interactive experiences.
+          interactive experiences..
         </p>
       </div>
       
