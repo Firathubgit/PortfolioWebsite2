@@ -6,7 +6,7 @@ import Navbar from './Components/Header/Navbar.jsx'
 import Hero from './Components/Hero/Hero.jsx'
 import Projects from './Components/Projects/Projects.jsx'
 import Education from './Components/Education/Education.jsx'
-import Resumebutton from './Components/ResumeButton/ResumeButton.jsx'
+import ResumeButton from './Components/ResumeButton/ResumeButton.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
     <App />
     <Projects />
     <Education />
-    <Resumebutton/>
+    <ResumeButton/>
     <Footer/>
   </StrictMode>,
 )
