@@ -119,6 +119,23 @@
     margin-bottom: 80px;
   }
 
+  .Education-section-title {
+    color: white;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .Certificates-section-title {
+    color: rgba(255, 255, 255, 0.8); /* Slightly less white */
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.3rem; /* Slightly smaller font size */
+    font-weight: 600;
+    margin-top: 40px; /* Add some space above the certificates section */
+  }
+
   .timeline {
     margin-left: 21px; /* 30% reduction from 30px */
     padding-left: 14px; /* 30% reduction from 20px */
@@ -153,5 +170,69 @@
 
   .timeline-content p {
     font-size: 0.56rem; /* 30% reduction from 0.8rem */
+  }
+}
+
+/* Additional responsive design for screens smaller than 500px */
+@media (max-width: 500px) {
+  .Education-section {
+    max-width: 350px; /* 30% reduction from 525px */
+    margin: 0 auto;
+    padding: 0px 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80px;
+  }
+
+  .Education-section-title {
+    color: white;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .Certificates-section-title {
+    color: rgba(255, 255, 255, 0.8); /* Slightly less white */
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.1rem; /* Slightly smaller font size */
+    font-weight: 600;
+    margin-top: 40px; /* Add some space above the certificates section */
+  }
+
+  .timeline {
+    margin-left: 14.7px; /* 30% reduction from 21px */
+    padding-left: 9.8px; /* 30% reduction from 14px */
+    border-left: 1.96px solid rgb(255, 255, 255); /* 30% reduction from 2.8px */
+  }
+
+  .timeline-item {
+    margin-bottom: 34.3px; /* 30% reduction from 49px */
+    margin-top: 19.6px; /* 30% reduction from 28px */
+  }
+
+  .timeline-icon {
+    width: 12.25px; /* 30% reduction from 17.5px */
+    height: 12.25px; /* 30% reduction from 17.5px */
+    border: 2.45px solid #ffffff; /* 30% reduction from 3.5px */
+    left: -17.15px; /* 30% reduction from -24.5px */
+  }
+
+  .timeline-content {
+    padding-left: 9.8px; /* 30% reduction from 14px */
+    max-width: 441px; /* 30% reduction from 630px */
+    width: 90%;
+  }
+
+  .timeline-content h3 {
+    font-size: 0.735rem; /* 30% reduction from 1.05rem */
+  }
+
+  .timeline-content h4 {
+    font-size: 0.392rem; /* 30% reduction from 0.56rem */
+  }
+
+  .timeline-content p {
+    font-size: 0.392rem; /* 30% reduction from 0.56rem */
   }
 }

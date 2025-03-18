@@ -149,3 +149,36 @@
     font-weight: 600;
   }
 }
+
+/* Additional responsive design for screens smaller than 500px */
+@media (max-width: 500px) {
+  .work-section {
+    max-width: 350px; /* 30% reduction from 525px */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80px;
+  }
+  .work-item {
+    max-width: 343px; /* 30% reduction from 490px */
+    width: 343px; /* 30% reduction from 490px */
+    background: rgb(255, 255, 255);
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+  }
+  .marquee-wrapper img {
+    height: 19.6px; /* 30% reduction from 28px */
+    margin: 0 9.8px; /* 30% reduction from 14px */
+  }
+  .section-title {
+    color: white;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.4rem; /* 30% reduction from 2rem */
+    font-weight: 600;
+  }
+}

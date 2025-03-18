@@ -173,3 +173,35 @@
     animation: wave 2.5s infinite ease-in-out;
   }
 }
+
+/* Additional responsive design for screens smaller than 500px */
+@media (max-width: 500px) {
+  .rectangle {
+    width: 350px; /* 30% reduction from 500px */
+    height: 230px; /* 30% reduction from 285px */
+  }
+  .hero-image {
+    max-width: 80px; /* 30% reduction from 100px */
+    margin-left: 0.7rem; /* 30% reduction from 1rem */
+    margin-top: 0.7rem; /* 30% reduction from 1rem */
+  }
+  .hero-text h1 {
+    font-size: 1.2rem; /* 30% reduction from 1.5rem */
+  }
+  .location {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.4rem;
+  }
+  .bio {
+    font-size: 0.539rem; /* 30% reduction from 0.77rem */
+    max-width: 343px; /* 30% reduction from 490px */
+  }
+  .waveimg {
+    width: 21px; /* 30% reduction from 30px */
+    height: auto;
+    transform-origin: 70% 70%;
+    transform: scaleX(-1) rotate(0deg);
+    animation: wave 2.5s infinite ease-in-out;
+  }
+}
