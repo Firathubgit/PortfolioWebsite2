@@ -86,3 +86,72 @@
   padding-left: 20px;
   border-left: 2px solid rgba(255, 255, 255, 0.5); /* lighter vertical line */
 }
+
+@media (max-width: 1000px) {
+  .Education-section {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 0.7rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Additional responsive design for screens smaller than 750px */
+@media (max-width: 750px) {
+  .Education-section {
+    max-width: 525px; /* 30% reduction from 750px */
+    margin: 0 auto;
+    padding: 0px 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80px;
+  }
+
+  .timeline {
+    margin-left: 21px; /* 30% reduction from 30px */
+    padding-left: 14px; /* 30% reduction from 20px */
+    border-left: 2.8px solid rgb(255, 255, 255); /* 30% reduction from 4px */
+  }
+
+  .timeline-item {
+    margin-bottom: 49px; /* 30% reduction from 70px */
+    margin-top: 28px; /* 30% reduction from 40px */
+  }
+
+  .timeline-icon {
+    width: 17.5px; /* 30% reduction from 25px */
+    height: 17.5px; /* 30% reduction from 25px */
+    border: 3.5px solid #ffffff; /* 30% reduction from 5px */
+    left: -24.5px; /* 30% reduction from -35px */
+  }
+
+  .timeline-content {
+    padding-left: 14px; /* 30% reduction from 20px */
+    max-width: 630px; /* 30% reduction from 900px */
+    width: 90%;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.05rem; /* 30% reduction from 1.5rem */
+  }
+
+  .timeline-content h4 {
+    font-size: 0.56rem; /* 30% reduction from 0.8rem */
+  }
+
+  .timeline-content p {
+    font-size: 0.56rem; /* 30% reduction from 0.8rem */
+  }
+}

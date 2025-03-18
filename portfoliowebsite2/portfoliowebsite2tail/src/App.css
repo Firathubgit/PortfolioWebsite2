@@ -95,3 +95,57 @@
 .marquee-ltr {
   animation-name: marquee-ltr;
 }
+
+@media (max-width: 1000px) {
+  .work-section {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80px;
+  }
+  .work-item {
+    max-width: 700px;
+    width: 700px;
+    background: rgb(255, 255, 255);
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+  }
+}
+
+/* Additional responsive design for screens smaller than 750px */
+@media (max-width: 750px) {
+  .work-section {
+    max-width: 525px; /* 30% reduction from 750px */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80px;
+  }
+  .work-item {
+    max-width: 490px; /* 30% reduction from 700px */
+    width: 490px; /* 30% reduction from 700px */
+    background: rgb(255, 255, 255);
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+  }
+  .marquee-wrapper img {
+    height: 28px; /* 30% reduction from 40px */
+    margin: 0 14px; /* 30% reduction from 20px */
+  }
+  .section-title {
+    color: white;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}

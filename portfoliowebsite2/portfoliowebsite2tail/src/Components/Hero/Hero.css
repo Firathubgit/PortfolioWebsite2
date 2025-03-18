@@ -5,47 +5,30 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
-
-/* Rectangle.css */
 .rectangle {
   width: 900px;
-  /* Adjust to desired width */
   height: 180px;
-  /* Adjust to desired height */
   background-color: rgba(0, 0, 0, 0);
-  /* Rectangle background */
   border: 2px solid rgb(255, 255, 255);
-  /* White border */
   box-sizing: border-box;
-  /* Ensures padding/border don’t overflow */
-  /* Centers vertically */
   position: relative;
-
   margin: 40px auto;
-  /* This will center horizontally */
   transform: scale(1.00);
   transition: all 0.3s;
 }
 
-.rectangle:hover{
+.rectangle:hover {
   transform: scale(1.01);
 }
 
-/* Put the squares in the top-right corner. */
 .social-links {
   position: absolute;
   top: 10px;
   right: 10px;
   display: flex;
-  /* so squares appear side-by-side */
   gap: 10px;
-  /* space between squares */
 }
 
-
-
-/* Style each square */
 .square {
   width: 30px;
   height: 30px;
@@ -59,7 +42,7 @@
   transform: scale(1.2);
 }
 
-.square:active{
+.square:active {
   transform: scale(1.1);
 }
 
@@ -93,33 +76,27 @@
   color: #ffffff;
   max-width: 710px;
   display: flex;
-  /* remove the quotes here! */
   align-items: center;
   gap: 0rem;
   margin-bottom: -0.5rem;
 }
 
-
-
 .waveimg {
   width: 40px;
   height: auto;
-  transform-origin: 70% 70%; 
-  /* Flip horizontally + start rotation at 0 deg */
-  transform: scaleX(-1) rotate(0deg);  
-
-  /* Continue with the wave animation as usual */
+  transform-origin: 70% 70%;
+  transform: scaleX(-1) rotate(0deg);
   animation: wave 2.5s infinite ease-in-out;
 }
-/* Define keyframes for a ‘wave’ effect */
+
 @keyframes wave {
-  0%   { transform: scaleX(-1) rotate(0deg); }
-  10%  { transform: scaleX(-1) rotate(14deg); }
-  20%  { transform: scaleX(-1) rotate(-8deg); }
-  30%  { transform: scaleX(-1) rotate(14deg); }
-  40%  { transform: scaleX(-1) rotate(-4deg); }
-  50%  { transform: scaleX(-1) rotate(10deg); }
-  60%  { transform: scaleX(-1) rotate(0deg); }
+  0% { transform: scaleX(-1) rotate(0deg); }
+  10% { transform: scaleX(-1) rotate(14deg); }
+  20% { transform: scaleX(-1) rotate(-8deg); }
+  30% { transform: scaleX(-1) rotate(14deg); }
+  40% { transform: scaleX(-1) rotate(-4deg); }
+  50% { transform: scaleX(-1) rotate(10deg); }
+  60% { transform: scaleX(-1) rotate(0deg); }
   100% { transform: scaleX(-1) rotate(0deg); }
 }
 
@@ -138,17 +115,61 @@
 }
 
 /* Mobile responsive */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .rectangle {
+    width: 700px;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    position: relative;
+    margin: 40px auto;
+    transform: scale(1.00);
+    transition: all 0.3s;
+  }
+  .hero-image {
+    flex: 1;
+    max-width: 130px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
   .hero-content {
     flex-direction: column;
     gap: 2rem;
   }
-
   .hero-text {
     text-align: center;
   }
-
   .hero-text h1 {
     font-size: 2rem;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/* Additional responsive design for screens smaller than 750px */
+@media (max-width: 750px) {
+  .rectangle {
+    width: 500px; /* 30% reduction from 700px */
+    height: 285px; /* 30% reduction from 380px */
+  }
+  .hero-image {
+    max-width: 100px; /* 30% reduction from 130px */
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem; /* 30% reduction from 2rem */
+  }
+  .bio {
+    font-size: 0.77rem; /* 30% reduction from 1.1rem */
+    max-width: 490px;
+  }
+  .waveimg {
+    width: 30px;
+    height: auto;
+    transform-origin: 70% 70%;
+    transform: scaleX(-1) rotate(0deg);
+    animation: wave 2.5s infinite ease-in-out;
   }
 }

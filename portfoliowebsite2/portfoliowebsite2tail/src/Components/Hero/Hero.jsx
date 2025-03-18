@@ -39,8 +39,6 @@ const Hero = () => {
 
                 </div>
                 <div className="hero-content">
-
-                    {/* Replace "your-image.jpg" with your actual image file */}
                     <div className="hero-image">
                         <img src={Facepic} />
                     </div>

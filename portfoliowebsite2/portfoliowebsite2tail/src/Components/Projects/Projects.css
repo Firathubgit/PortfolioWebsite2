@@ -57,7 +57,6 @@
   bottom: 0;
   /* Example: No gradient for top 40%, then fade to black by 90% */
   background: linear-gradient(
-    
     to bottom,
     rgba(0, 0, 0, 0.116) 40%,   /* Transparent up to 40% */
     rgba(0, 0, 0, 0.5) 60%, /* Fade to 0.8 opacity by 90% */
@@ -147,8 +146,6 @@
   transition: all 0.3s;
 }
 
-
-
 .LearnMoreButton:active {
   transform: scale(1.0);
 }
@@ -161,4 +158,100 @@
 
 .LearnMoreButton:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+  .projets-section {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80px;
+  }
+
+  .projets-item {
+    width: 700px;             /* Fixed width so image stays consistent */
+    height: 350px;            /* Fixed height so it doesn't change size on hover */
+    background: #1a1a1a;      /* Fallback background color */
+    border-radius: 8px;
+    overflow: hidden;         /* Hides zoomed-in edges of the image */
+    position: relative;       /* Absolutely position children */
+    margin-bottom: 40px;      /* Spacing between cards */
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .project-stack {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 4px;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    color: #ddd;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+}
+
+/* Additional responsive design for screens smaller than 750px */
+@media (max-width: 750px) {
+  .projects-section-title {
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px; /* or whatever spacing you like */
+  }
+  .projets-section {
+    max-width: 525px; /* 30% reduction from 750px */
+    margin: 0 auto;
+    padding: 0px 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80px;
+  }
+
+  .projets-item {
+    width: 490px; /* 30% reduction from 700px */
+    height: 245px; /* 30% reduction from 350px */
+    background: #1a1a1a; /* Fallback background color */
+    border-radius: 8px;
+    overflow: hidden; /* Hides zoomed-in edges of the image */
+    position: relative; /* Absolutely position children */
+    margin-bottom: 40px; /* Spacing between cards */
+  }
+
+  .project-title {
+    font-size: 1.05rem; /* 30% reduction from 1.5rem */
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .project-stack {
+    font-size: 0.63rem; /* 30% reduction from 0.9rem */
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 4px;
+  }
+
+  .project-description {
+    font-size: 0.63rem; /* 30% reduction from 0.9rem */
+    color: #ddd;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
+  .LearnMoreButton {
+    width: 91px; /* 30% reduction from 130px */
+    height: 26.6px; /* 30% reduction from 38px */
+  }
+
+  .LearnMoreButton span {
+    font-size: 0.63rem; /* 30% reduction from 0.9rem */
+  }
 }
