@@ -1,0 +1,134 @@
+.project-page-container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.project-page-title {
+  color: white;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 650;
+  margin-bottom: 20px; /* or whatever spacing you like */
+  margin-top: 40px;
+}
+
+.project-page-hero {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-hero-image:hover {
+  transform: scale(1.05);
+}
+
+.project-page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.project-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.project-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-section li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #e0e0e0;
+}
+
+.project-section li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .project-page-container {
+    padding: 1rem;
+  }
+
+  .project-page-title {
+    font-size: 2rem;
+  }
+
+  .project-page-hero {
+    height: 300px;
+  }
+
+  .project-section {
+    padding: 1.5rem;
+  }
+}
+
+.project-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-content h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-details {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.project-details h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.project-details p {
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+} 

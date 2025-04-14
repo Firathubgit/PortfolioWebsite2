@@ -1,0 +1,134 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-image-container {
+  position: relative;
+  width: 100%;
+  height: 1000%;
+}
+
+/* Add gradient overlay */
+.carousel-image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Side gradients for depth */
+.carousel-image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0) 25%,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-button {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+.carousel-button.prev {
+  left: 20px;
+}
+
+.carousel-button.next {
+  right: 20px;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.gradient-corner {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, transparent 100%);
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  background: linear-gradient(-135deg, rgba(0,0,0,0.3) 0%, transparent 100%);
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.3) 0%, transparent 100%);
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.3) 0%, transparent 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .carousel-container,
+  .carousel-image-container {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-container,
+  .carousel-image-container {
+    height: 400px;
+  }
+} 

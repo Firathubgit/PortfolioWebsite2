@@ -19,9 +19,9 @@ const MyWorkMyWorkPage = () => {
                     <h3 className="project-title">Custom Steering Wheel Shop</h3>
                     <p className="project-stack">React | Tailwind CSS | Node.js | Figma </p>
                     <p className="project-description">
-                        A React-based e-commerce platform offering customizable luxury steering wheels. Features material options and immersive camera animations powered by Unity 3D, seamlessly integrated into the website. Designed for automotive enthusiasts with a focus on high-end UI and user experience.
+                      
                     </p>
-                    <a className="LearnMoreButton">
+                    <a href="/projects/steering-wheel-shop" className="LearnMoreButton">
                         <span>Learn more</span>
                     </a>
                 </div>

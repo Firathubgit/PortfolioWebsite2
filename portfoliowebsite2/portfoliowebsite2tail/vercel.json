@@ -3,7 +3,13 @@
       { "src": "/about", "dest": "/about.html" },
       { "src": "/MyWork", "dest": "/MyWork.html" },
       { "src": "/projects", "dest": "/projects.html" },
-      { "src": "/contact", "dest": "/contact.html" }
+      { "src": "/contact", "dest": "/contact.html" },
+      { "src": "/projects/wacky-warriors", "dest": "/projects/wacky-warriors.html" },
+      { "src": "/projects/brainrot-generator", "dest": "/projects/brainrot-generator.html" },
+      { "src": "/projects/steering-wheel-shop", "dest": "/projects/steering-wheel-shop.html" },
+      { "src": "/projects/exhuarire", "dest": "/projects/exhuarire.html" },
+      { "src": "/projects/car-wash-tracker", "dest": "/projects/car-wash-tracker.html" },
+      { "src": "/projects/gates-of-hell", "dest": "/projects/gates-of-hell.html" }
     ]
   }
   

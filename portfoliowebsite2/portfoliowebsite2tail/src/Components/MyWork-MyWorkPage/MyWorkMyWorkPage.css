@@ -5,8 +5,8 @@
   margin: 0 auto;
   padding: 0px 20px;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 80px;
-  margin-top: 80px;
+  margin-bottom: 120px;  /* Increased space before footer */
+  margin-top: 120px;  /* Increased space from navbar */
 }
 
 .projects-section-title {
@@ -14,18 +14,19 @@
   text-align: left;
   font-size: 2.5rem;
   font-weight: 600;
-  margin-bottom: 20px; /* or whatever spacing you like */
+  margin-bottom: 35px;
+  padding-top: 20px;
 }
 
 .projects-section-undertitle {
   margin-top: -25px;
-  margin-bottom: 20px;
+  margin-bottom: 120px;  /* Significantly increased for much more space */
   font-size: 1.6rem;
   font-weight: 450;
   color: #ffffff8c;
 }
 
-/* The “card” container */
+/* The "card" container */
 .projets-item {
   width: 900px;             /* Fixed width so image stays consistent */
   height: 450px;            /* Fixed height so it doesn't change size on hover */
@@ -33,7 +34,7 @@
   border-radius: 8px;
   overflow: hidden;         /* Hides zoomed-in edges of the image */
   position: relative;       /* Absolutely position children */
-  margin-bottom: 40px;      /* Spacing between cards */
+  margin-bottom: 60px;      /* More space between projects */
 }
 
 /* Image container, absolutely positioned */
@@ -105,7 +106,7 @@
   margin-bottom: 16px;
 }
 
-/* “Learn more” button styling */
+/* "Learn more" button styling */
 .learn-more {
   width: 125px;
   height: 35px;
@@ -171,11 +172,20 @@
 
 @media (max-width: 1000px) {
   .projets-section {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 0px 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .projects-section-title {
+    margin-bottom: 30px;
+  }
+
+  .projects-section-undertitle {
+    margin-bottom: 100px;
+  }
+
+  .projets-item {
+    margin-bottom: 50px;
   }
 
   .projets-item {
@@ -185,7 +195,6 @@
     border-radius: 8px;
     overflow: hidden;         /* Hides zoomed-in edges of the image */
     position: relative;       /* Absolutely position children */
-    margin-bottom: 40px;      /* Spacing between cards */
   }
 
   .project-title {
@@ -211,28 +220,21 @@
 
 @media (max-width: 750px) {
   .projets-section {
-    max-width: 525px; /* 30% reduction from 750px */
-    margin: 0 auto;
-    padding: 0px 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-bottom: 90px;
   }
 
   .projects-section-title {
-    color: white;
-    text-align: left;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 20px; /* or whatever spacing you like */
-    margin-top: 40px; /* Add some space above the projects section */
+    margin-bottom: 25px;
+    margin-top: 50px;
   }
 
   .projects-section-undertitle {
-    margin-top: -25px;
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-    font-weight: 450;
-    color: #ffffff8c;
+    margin-bottom: 90px;
+  }
+
+  .projets-item {
+    margin-bottom: 40px;
   }
 
   .projets-item {
@@ -242,7 +244,6 @@
     border-radius: 8px;
     overflow: hidden; /* Hides zoomed-in edges of the image */
     position: relative; /* Absolutely position children */
-    margin-bottom: 40px; /* Spacing between cards */
   }
 
   .project-title {
@@ -277,66 +278,50 @@
 
 @media (max-width: 500px) {
   .projets-section {
-    max-width: 350px; /* 30% reduction from 525px */
-    margin: 0 auto;
-    padding: 0px 20px;
-    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
     margin-bottom: 80px;
   }
 
   .projects-section-title {
-    color: white;
-    text-align: left;
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin-bottom: 20px; /* or whatever spacing you like */
-    margin-top: 40px; /* Add some space above the projects section */
+    margin-bottom: 20px;
+    margin-top: 40px;
   }
 
   .projects-section-undertitle {
-    margin-top: -25px;
-    margin-bottom: 20px;
-    font-size: 1rem;
-    font-weight: 450;
-    color: #ffffff8c;
+    margin-bottom: 80px;
   }
 
   .projets-item {
-    width: 343px; /* 30% reduction from 490px */
-    height: 171.5px; /* 30% reduction from 245px */
-    background: #1a1a1a; /* Fallback background color */
-    border-radius: 8px;
-    overflow: hidden; /* Hides zoomed-in edges of the image */
-    position: relative; /* Absolutely position children */
-    margin-bottom: 40px; /* Spacing between cards */
+    margin-bottom: 35px;
+  }
+
+  .projets-item {
+    width: 380px;
+    height: 220px;
   }
 
   .project-title {
-    font-size: 0.735rem; /* 30% reduction from 1.05rem */
-    font-weight: 600;
+    font-size: 1.2rem;
     margin-bottom: 4px;
   }
 
   .project-stack {
-    font-size: 0.441rem; /* 30% reduction from 0.63rem */
-    font-style: italic;
-    color: #ccc;
+    font-size: 0.8rem;
     margin-bottom: 4px;
   }
 
   .project-description {
-    font-size: 0.4rem; /* 30% reduction from 0.63rem */
-    color: #ddd;
-    line-height: 1.4;
-    margin-bottom: 16px;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
   }
 
   .LearnMoreButton {
-    width: 63.7px; /* 30% reduction from 91px */
-    height: 18.62px; /* 30% reduction from 26.6px */
+    width: 100px;
+    height: 32px;
   }
 
   .LearnMoreButton span {
-    font-size: 0.441rem; /* 30% reduction from 0.63rem */
+    font-size: 0.8rem;
   }
 }

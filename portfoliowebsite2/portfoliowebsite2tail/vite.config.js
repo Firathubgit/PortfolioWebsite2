@@ -11,7 +11,13 @@ export default defineConfig({
         about: "about.html",     // About Page
         mywork: "MyWork.html",   // My Work Page
         projects: "projects.html", // Projects Page
-        contact: "contact.html"  // Contact Me Page
+        contact: "contact.html",  // Contact Me Page
+        wackyWarriors: "projects/wacky-warriors.html",
+        brainrotGenerator: "projects/brainrot-generator.html",
+        steeringWheelShop: "projects/steering-wheel-shop.html",
+        exhuarire: "projects/exhuarire.html",
+        carWashTracker: "projects/car-wash-tracker.html",
+        gatesOfHell: "projects/gates-of-hell.html"
       },
     },
   },

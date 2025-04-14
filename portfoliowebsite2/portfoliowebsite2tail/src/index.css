@@ -24,3 +24,10 @@ body {
   min-height: 100vh;
   background-color: black;
 }
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0a192f;
+}
