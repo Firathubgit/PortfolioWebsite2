@@ -5,12 +5,12 @@
   margin: 0 auto;
   padding: 20px;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .section-title {
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: left;
   font-size: 2.5rem;
   font-weight: 600;
@@ -20,11 +20,11 @@
   max-width: 900px;
   width: 900px;
   background: rgb(255, 255, 255);
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   overflow: hidden;
-  padding: 10px;
+  padding: 15px;
   position: relative;
 }
 
@@ -61,7 +61,7 @@
 
 .marquee-wrapper img {
   height: 40px;
-  margin: 0 20px;
+  margin: 0 25px;
   flex-shrink: 0;
 }
 
@@ -99,86 +99,70 @@
 @media (max-width: 1000px) {
   .work-section {
     max-width: 750px;
-    margin: 0 auto;
     padding: 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
   .work-item {
     max-width: 700px;
     width: 700px;
-    background: rgb(255, 255, 255);
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden;
-    padding: 10px;
-    position: relative;
+    padding: 13px;
+    margin: 22px 0;
+  }
+  .section-title {
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+  }
+  .marquee-wrapper img {
+    height: 35px;
+    margin: 0 22px;
   }
 }
 
-/* Additional responsive design for screens smaller than 750px */
 @media (max-width: 750px) {
   .work-section {
-    max-width: 525px; /* 30% reduction from 750px */
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
+    max-width: 550px;
+    padding: 18px;
     margin-bottom: 80px;
   }
   .work-item {
-    max-width: 490px; /* 30% reduction from 700px */
-    width: 490px; /* 30% reduction from 700px */
-    background: rgb(255, 255, 255);
+    max-width: 520px;
+    width: 520px;
+    padding: 12px;
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden;
-    padding: 10px;
-    position: relative;
+    border-radius: 10px;
   }
   .marquee-wrapper img {
-    height: 28px; /* 30% reduction from 40px */
-    margin: 0 14px; /* 30% reduction from 20px */
+    height: 32px;
+    margin: 0 20px;
   }
   .section-title {
-    color: white;
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.1rem;
+    margin-bottom: 22px;
   }
 }
 
-/* Additional responsive design for screens smaller than 500px */
 @media (max-width: 500px) {
   .work-section {
-    max-width: 350px; /* 30% reduction from 525px */
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 80px;
+    max-width: 380px;
+    padding: 15px;
+    margin-bottom: 70px;
   }
   .work-item {
-    max-width: 343px; /* 30% reduction from 490px */
-    width: 343px; /* 30% reduction from 490px */
-    background: rgb(255, 255, 255);
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden;
-    padding: 10px;
-    position: relative;
+    max-width: 360px;
+    width: 360px;
+    padding: 12px;
+    margin: 18px 0;
+    border-radius: 10px;
   }
   .marquee-wrapper img {
-    height: 19.6px; /* 30% reduction from 28px */
-    margin: 0 9.8px; /* 30% reduction from 14px */
+    height: 28px;
+    margin: 0 18px;
   }
   .section-title {
-    color: white;
+    font-size: 1.8rem;
     margin-bottom: 20px;
-    text-align: left;
-    font-size: 1.4rem; /* 30% reduction from 2rem */
-    font-weight: 600;
+  }
+  .marquee-wrapper {
+    animation-duration: 15s;
   }
 }

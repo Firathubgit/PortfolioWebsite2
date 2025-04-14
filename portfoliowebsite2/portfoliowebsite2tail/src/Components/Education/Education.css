@@ -5,80 +5,82 @@
   margin: 0 auto;
   padding: 0px 20px;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
+  margin-top: 40px;
 }
 
 .Education-section-title {
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: left;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 600;
 }
 
 .Certificates-section-title {
-  color: rgba(255, 255, 255, 0.8); /* Slightly less white */
-  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
   text-align: left;
-  font-size: 2rem; /* Slightly smaller font size */
+  font-size: 2.4rem;
   font-weight: 600;
-  margin-top: 40px; /* Add some space above the certificates section */
+  margin-top: 60px;
 }
 
 /* Timeline container */
 .timeline {
   position: relative;
-  margin-left: 30px; /* space for the vertical line */
-  padding-left: 20px;
-  border-left: 4px solid rgb(255, 255, 255); /* the vertical line */
+  margin-left: 40px;
+  padding-left: 30px;
+  border-left: 4px solid rgb(255, 255, 255);
 }
 
 /* Each timeline item */
 .timeline-item {
   position: relative;
-  margin-bottom: 70px; /* spacing between items */
-  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-top: 50px;
 }
 
 /* The circle/indicator on the timeline */
 .timeline-icon {
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   background-color: rgb(0, 0, 0);
   border-radius: 50%;
-  border: 5px solid #ffffff; /* or some darker color if your background is black */
+  border: 5px solid #ffffff;
   position: absolute;
-  left: -35px;  /* position left so it overlaps the vertical line */
+  left: -46px;
   top: 0;
 }
 
 /* Content box (the white container) */
 .timeline-content {
   justify-content: left;
-  padding-left: 20px;
+  padding-left: 25px;
   max-width: 900px;
   width: 90%;
 }
 
 .timeline-content h3 {
-  margin: 0 0 5px;
-  font-size: 1.5rem;
+  margin: 0 0 8px;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #ffffff;
 }
 
 .timeline-content h4 {
-  margin-top: -10px;
+  margin-top: -8px;
   margin-bottom: 20px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 300;
   color: #ffffff8c;
 }
 
 .timeline-content p {
   color: #ffffff;
-  line-height: 1.5;
-  font-weight: 100;
+  line-height: 1.6;
+  font-weight: 300;
+  font-size: 1.1rem;
 }
 
 /* Subcategory container */
@@ -90,149 +92,137 @@
 @media (max-width: 1000px) {
   .Education-section {
     max-width: 750px;
-    margin: 0 auto;
-    padding: 0px 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
+  }
+
+  .Education-section-title {
+    font-size: 2.6rem;
+    margin-bottom: 35px;
+  }
+
+  .Certificates-section-title {
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+    margin-top: 55px;
   }
 
   .timeline-content h3 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .timeline-content h4 {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .timeline-content p {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
 
 /* Additional responsive design for screens smaller than 750px */
 @media (max-width: 750px) {
   .Education-section {
-    max-width: 525px; /* 30% reduction from 750px */
-    margin: 0 auto;
-    padding: 0px 20px;
-    font-family: 'Poppins', sans-serif;
+    max-width: 550px;
     margin-bottom: 80px;
   }
 
   .Education-section-title {
-    color: white;
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
   }
 
   .Certificates-section-title {
-    color: rgba(255, 255, 255, 0.8); /* Slightly less white */
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 1.3rem; /* Slightly smaller font size */
-    font-weight: 600;
-    margin-top: 40px; /* Add some space above the certificates section */
+    font-size: 2rem;
+    margin-bottom: 30px;
+    margin-top: 50px;
   }
 
   .timeline {
-    margin-left: 21px; /* 30% reduction from 30px */
-    padding-left: 14px; /* 30% reduction from 20px */
-    border-left: 2.8px solid rgb(255, 255, 255); /* 30% reduction from 4px */
+    margin-left: 35px;
+    padding-left: 25px;
+    border-left: 3px solid rgb(255, 255, 255);
   }
 
   .timeline-item {
-    margin-bottom: 49px; /* 30% reduction from 70px */
-    margin-top: 28px; /* 30% reduction from 40px */
+    margin-bottom: 60px;
+    margin-top: 40px;
   }
 
   .timeline-icon {
-    width: 17.5px; /* 30% reduction from 25px */
-    height: 17.5px; /* 30% reduction from 25px */
-    border: 3.5px solid #ffffff; /* 30% reduction from 5px */
-    left: -24.5px; /* 30% reduction from -35px */
-  }
-
-  .timeline-content {
-    padding-left: 14px; /* 30% reduction from 20px */
-    max-width: 630px; /* 30% reduction from 900px */
-    width: 90%;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #ffffff;
+    left: -40px;
   }
 
   .timeline-content h3 {
-    font-size: 1.05rem; /* 30% reduction from 1.5rem */
+    font-size: 1.4rem;
   }
 
   .timeline-content h4 {
-    font-size: 0.56rem; /* 30% reduction from 0.8rem */
+    font-size: 0.95rem;
   }
 
   .timeline-content p {
-    font-size: 0.56rem; /* 30% reduction from 0.8rem */
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 }
 
 /* Additional responsive design for screens smaller than 500px */
 @media (max-width: 500px) {
   .Education-section {
-    max-width: 350px; /* 30% reduction from 525px */
-    margin: 0 auto;
-    padding: 0px 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 80px;
+    max-width: 380px;
+    margin-bottom: 70px;
+    padding: 0px 15px;
   }
 
   .Education-section-title {
-    color: white;
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
   }
 
   .Certificates-section-title {
-    color: rgba(255, 255, 255, 0.8); /* Slightly less white */
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 1.1rem; /* Slightly smaller font size */
-    font-weight: 600;
-    margin-top: 40px; /* Add some space above the certificates section */
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    margin-top: 45px;
   }
 
   .timeline {
-    margin-left: 14.7px; /* 30% reduction from 21px */
-    padding-left: 9.8px; /* 30% reduction from 14px */
-    border-left: 1.96px solid rgb(255, 255, 255); /* 30% reduction from 2.8px */
+    margin-left: 25px;
+    padding-left: 20px;
+    border-left: 3px solid rgb(255, 255, 255);
   }
 
   .timeline-item {
-    margin-bottom: 34.3px; /* 30% reduction from 49px */
-    margin-top: 19.6px; /* 30% reduction from 28px */
+    margin-bottom: 60px;
+    margin-top: 40px;
   }
 
   .timeline-icon {
-    width: 12.25px; /* 30% reduction from 17.5px */
-    height: 12.25px; /* 30% reduction from 17.5px */
-    border: 2.45px solid #ffffff; /* 30% reduction from 3.5px */
-    left: -17.15px; /* 30% reduction from -24.5px */
+    width: 20px;
+    height: 20px;
+    border: 4px solid #ffffff;
+    left: -32px;
   }
 
   .timeline-content {
-    padding-left: 9.8px; /* 30% reduction from 14px */
-    max-width: 441px; /* 30% reduction from 630px */
-    width: 90%;
+    padding-left: 15px;
   }
 
   .timeline-content h3 {
-    font-size: 0.735rem; /* 30% reduction from 1.05rem */
+    font-size: 1.3rem;
+    margin-bottom: 6px;
   }
 
   .timeline-content h4 {
-    font-size: 0.392rem; /* 30% reduction from 0.56rem */
+    font-size: 0.9rem;
+    margin-bottom: 15px;
   }
 
   .timeline-content p {
-    font-size: 0.392rem; /* 30% reduction from 0.56rem */
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 }
