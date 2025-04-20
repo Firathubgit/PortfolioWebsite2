@@ -6,7 +6,7 @@
   padding: 0px 20px;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 120px;  /* Increased space before footer */
-  margin-top: 120px;  /* Increased space from navbar */
+  margin-top: 10px;  /* Increased space from navbar */
 }
 
 .projects-section-title {
@@ -172,7 +172,7 @@
 
 @media (max-width: 1000px) {
   .projets-section {
-    margin-top: 100px;
+    margin-top: 10px;
     margin-bottom: 100px;
   }
 
