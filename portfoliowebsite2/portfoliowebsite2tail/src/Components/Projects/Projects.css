@@ -261,45 +261,47 @@
 
 @media (max-width: 500px) {
   .projects-section-title {
-    color: white;
-    text-align: left;
-    font-size: 1.8rem; /* 30% reduction from 2rem */
-    font-weight: 600;
-    margin-bottom: 20px; /* or whatever spacing you like */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
   }
+
   .projets-section {
-    max-width: 350px; /* 30% reduction from 525px */
-    margin: 0 auto;
-    padding: 0px 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 80px;
+    max-width: 380px;
+    padding: 0px 15px;
+    margin-bottom: 70px;
   }
 
   .projets-item {
-    width: 343px; /* 30% reduction from 490px */
-    height: 171.5px; /* 30% reduction from 245px */
-    background: #1a1a1a; /* Fallback background color */
-    border-radius: 8px;
-    overflow: hidden; /* Hides zoomed-in edges of the image */
-    position: relative; /* Absolutely position children */
-    margin-bottom: 40px; /* Spacing between cards */
+    width: 380px;
+    height: 210px;
+    margin-bottom: 35px;
   }
 
   .project-content {
-    bottom: 10px;
+    bottom: 12px;
+    left: 15px;
   }
 
   .project-title {
-    font-size: 1.3rem;
-    margin-bottom: -9px;
+    font-size: 1.2rem;
+    line-height: 0.7;
+    margin-bottom: -14px;
   }
 
   .project-stack {
-    font-size: 0.85rem;
-    margin-bottom: 10px;
+    font-size: 0.8rem;
+    line-height: 0.7;
+    margin-bottom: -4px;
   }
 
   .LearnMoreButton {
-    margin-top: -5px;
+    margin-top: -14px;
+    width: 110px;
+    height: 32px;
+    border: 2px solid #fdfdfd;
+  }
+
+  .LearnMoreButton span {
+    font-size: 0.8rem;
   }
 }
