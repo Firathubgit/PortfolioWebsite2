@@ -61,6 +61,18 @@ const Education = () => {
           </div>
         </div>
 
+        {/* === Linux Unhatched Certificate === */}
+        <div className="timeline-item">
+          <div className="timeline-icon"></div>
+          <div className="timeline-content">
+            <h3>Linux Unhatched – Cisco Networking Academy</h3>
+            <h4>Linux Unhatched Certificate | 2025</h4>
+            <p>
+              Completed Cisco's Linux Unhatched course covering core CLI and system operations.
+            </p>
+          </div>
+        </div>
+
         {/* === Cisco CCNA 2 Certificate === */}
         <div className="timeline-item">
           <div className="timeline-icon"></div>
