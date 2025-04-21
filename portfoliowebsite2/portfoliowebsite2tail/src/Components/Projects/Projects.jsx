@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import project1Image from "./Wacky4.png";
-import project2Image from "./BrainrotVideoGenerator.png";
+import project2Image from "./BrainrotVideoGeneratorWebsite.png";
 import project3Image from "./BmwShopify.png";
 
 const Projects = () => {
