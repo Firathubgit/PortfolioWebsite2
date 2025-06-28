@@ -1,327 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-.projets-section {
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 0px 20px;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 120px;  /* Increased space before footer */
-  margin-top: 10px;  /* Increased space from navbar */
-}
-
-.projects-section-title {
-  color: white;
-  text-align: left;
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 35px;
-  padding-top: 20px;
-}
-
-.projects-section-undertitle {
-  margin-top: -25px;
-  margin-bottom: 120px;  /* Significantly increased for much more space */
-  font-size: 1.6rem;
-  font-weight: 450;
-  color: #ffffff8c;
-}
-
-/* The "card" container */
-.projets-item {
-  width: 900px;             /* Fixed width so image stays consistent */
-  height: 450px;            /* Fixed height so it doesn't change size on hover */
-  background: #1a1a1a;      /* Fallback background color */
-  border-radius: 8px;
-  overflow: hidden;         /* Hides zoomed-in edges of the image */
-  position: relative;       /* Absolutely position children */
-  margin-bottom: 60px;      /* More space between projects */
-}
-
-/* Image container, absolutely positioned */
-.project-image {
-  position: absolute;
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0;
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;         /* Ensures the image fills the container */
-  transition: transform 0.3s ease;
-}
-
-/* Zoom effect on hover */
-.projets-item:hover .project-image img {
-  transform: scale(1.1);
-}
-
-/* The new gradient overlay below the text but over the image */
-.gradient-overlay {
-  position: absolute;
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0;
-  /* Example: No gradient for top 40%, then fade to black by 90% */
-  background: linear-gradient(
-    to bottom,
-    rgba(112, 112, 112, 0.03) 40%,   /* Transparent up to 40% */
-    rgba(0, 0, 0, 0.611) 60%, /* Fade to 0.8 opacity by 90% */
-    rgb(0, 0, 0) 100%   /* Fully black at 100% */
-  );
-  z-index: 1;
-}
-
-/* Text overlay at the bottom-left, above overlay */
-.project-content {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;  /* Optional if you want text to wrap nicely */
-  color: #fff;
-  z-index: 2;   /* Ensures content is on top of the overlay */
-}
-
-/* Titles, stacks, descriptions */
-.project-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.project-stack {
-  font-size: 1rem;
-  font-style: italic;
-  color: #ccc;
-  margin-bottom: 12px;
-}
-
-.project-description {
-  font-size: 1rem;
-  color: #ddd;
-  line-height: 1.4;
-  margin-bottom: 16px;
-}
-
-/* "Learn more" button styling */
-.learn-more {
-  width: 125px;
-  height: 35px;
-  display: flex;
-  background-color: #fff;
-  color: #000;
-  padding: 10px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: inline-flex;               /* Switch to flexbox */
-  align-items: center;               /* Vertically center the text */
-  justify-content: center;
-}
-
-.learn-more:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-.more-projects-button {
-  color: rgb(182, 182, 182);
-  font-weight: 600;
-  font-size: 1.5rem;
-  margin-left: 10px;
-  text-decoration: none;         /* no underline */
-  transition: color 0.2s ease;
-}
-
-.more-projects-button:hover {
-  color: #fff;
-}
-
-.LearnMoreButton {
-  cursor: pointer;
-  width: 130px;
-  height: 38px;
-  background-color: #000000; /* black background */
-  border: 3px solid #fdfdfd; /* white border */
-  border-radius: 10px;     /* large radius for a pill shape */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(1.00);
-  transition: all 0.3s;
-}
-
-.LearnMoreButton:active {
-  transform: scale(1.0);
-}
-
-.LearnMoreButton span {
-  color: #ffffff; /* white text */
-  font-weight: 450;
-  font-size: 0.9rem;
-}
-
-.LearnMoreButton:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 1000px) {
-  .projets-section {
-    margin-top: 10px;
-    margin-bottom: 100px;
+.work-experience-section {
+    max-width: 950px;
+    margin: 80px auto 120px auto;
+    padding: 0 60px;
+    font-family: 'Poppins', sans-serif;
   }
-
-  .projects-section-title {
-    margin-bottom: 30px;
+  
+  .work-experience-item {
+    display: flex;
+    margin-bottom: 120px;
+    align-items: center;
   }
-
-  .projects-section-undertitle {
-    margin-bottom: 100px;
-  }
-
-  .projets-item {
-    margin-bottom: 50px;
-  }
-
-  .projets-item {
-    width: 700px;             /* Fixed width so image stays consistent */
-    height: 350px;            /* Fixed height so it doesn't change size on hover */
-    background: #1a1a1a;      /* Fallback background color */
-    border-radius: 8px;
-    overflow: hidden;         /* Hides zoomed-in edges of the image */
-    position: relative;       /* Absolutely position children */
-  }
-
-  .project-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
-
-  .project-stack {
-    font-size: 0.9rem;
-    font-style: italic;
-    color: #ccc;
-    margin-bottom: 4px;
-  }
-
-  .project-description {
-    font-size: 0.9rem;
-    color: #ddd;
-    line-height: 1.4;
-    margin-bottom: 16px;
-  }
-}
-
-@media (max-width: 750px) {
-  .projets-section {
-    margin-top: 80px;
-    margin-bottom: 90px;
-  }
-
-  .projects-section-title {
-    margin-bottom: 25px;
-    margin-top: 50px;
-  }
-
-  .projects-section-undertitle {
-    margin-bottom: 90px;
-  }
-
-  .projets-item {
-    margin-bottom: 40px;
-  }
-
-  .projets-item {
-    width: 490px; /* 30% reduction from 700px */
-    height: 245px; /* 30% reduction from 350px */
-    background: #1a1a1a; /* Fallback background color */
-    border-radius: 8px;
-    overflow: hidden; /* Hides zoomed-in edges of the image */
-    position: relative; /* Absolutely position children */
-  }
-
-  .project-title {
-    font-size: 1.05rem; /* 30% reduction from 1.5rem */
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
-
-  .project-stack {
-    font-size: 0.63rem; /* 30% reduction from 0.9rem */
-    font-style: italic;
-    color: #ccc;
-    margin-bottom: 4px;
-  }
-
-  .project-description {
-    font-size: 0.63rem; /* 30% reduction from 0.9rem */
-    color: #ddd;
-    line-height: 1.4;
-    margin-bottom: 16px;
-  }
-
-  .LearnMoreButton {
-    width: 91px; /* 30% reduction from 130px */
-    height: 26.6px; /* 30% reduction from 38px */
-  }
-
-  .LearnMoreButton span {
-    font-size: 0.63rem; /* 30% reduction from 0.9rem */
-  }
-}
-
-@media (max-width: 500px) {
-  .projets-section {
-    margin-top: 60px;
-    margin-bottom: 80px;
-  }
-
-  .projects-section-title {
-    margin-bottom: 20px;
-    margin-top: 40px;
-  }
-
-  .projects-section-undertitle {
-    margin-bottom: 80px;
-  }
-
-  .projets-item {
-    margin-bottom: 35px;
-  }
-
-  .projets-item {
-    width: 380px;
+  
+  .work-experience-logo-container {
+    flex-shrink: 0;
+    width: 220px;
     height: 220px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
-  .project-title {
-    font-size: 1.2rem;
-    margin-bottom: 4px;
+  
+  .work-experience-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
   }
-
-  .project-stack {
-    font-size: 0.8rem;
-    margin-bottom: 4px;
+  
+  .work-experience-details {
+    color: white;
   }
-
-  .project-description {
-    font-size: 0.75rem;
-    line-height: 1.3;
+  
+  .work-experience-header {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .work-experience-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .work-experience-dates {
+    font-size: 1rem;
+    color: #a0a0a0;
+  }
+  
+  .work-experience-stack {
+    font-size: 1.1rem;
+    color: #cccccc;
     margin-bottom: 12px;
   }
-
-  .LearnMoreButton {
-    width: 100px;
-    height: 32px;
+  
+  .work-experience-description {
+    font-size: 1rem;
+    color: #b3b3b3;
+    line-height: 1.6;
   }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .work-experience-section {
+      padding: 0 40px;
+    }
 
-  .LearnMoreButton span {
-    font-size: 0.8rem;
+    .work-experience-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .work-experience-logo-container {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .work-experience-header {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
   }
-}
+  
+  @media (max-width: 480px) {
+    .work-experience-section {
+      padding: 0 25px;
+    }
+
+    .work-experience-title {
+      font-size: 1.5rem;
+    }
+  
+    .work-experience-logo-container {
+        width: 180px;
+        height: 180px;
+    }
+  }

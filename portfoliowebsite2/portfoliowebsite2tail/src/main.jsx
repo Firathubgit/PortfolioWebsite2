@@ -14,6 +14,7 @@ import BrainrotGenerator from './Components/ProjectPages/BrainrotGenerator.jsx'
 import SteeringWheelShop from './Components/ProjectPages/SteeringWheelShop.jsx'
 import Exhuarire from './Components/ProjectPages/Exhuarire.jsx'
 import GatesOfHell from './Components/ProjectPages/GatesOfHell.jsx'
+import Terrahutton from './Components/ProjectPages/Terrahutton.jsx'
 
 // Get the current page path
 const path = window.location.pathname;
@@ -67,6 +68,14 @@ const getContent = () => {
           <div className="app-container">
             <Navbar />
             <GatesOfHell />
+            <Footer />
+          </div>
+        );
+      case '/projects/terrahutton':
+        return (
+          <div className="app-container">
+            <Navbar />
+            <Terrahutton />
             <Footer />
           </div>
         );
