@@ -1,11 +1,11 @@
 import "./ResumeButton.css"
-import resumePNG from "../../../FiratKayaCV.png"; 
+import resumePNG from "../../ResumeFiratKaya.png"; 
 const Resumebutton = () => {
   return (
     <>
       <section className="projets-section">
 
-        <a href={resumePNG} download="FiratKaya_CV.png" className="pill">
+        <a href={resumePNG} download="ResumeFiratKaya.png" className="pill">
           <span>Ladda ned mitt CV</span>
         </a>
 

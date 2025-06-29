@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import resumePNG from "../../../FiratKayaCV.png";
+import resumePNG from "../../ResumeFiratKaya.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="/MyWork.html">My Work</a>
           <a href="/projects.html">Projects</a>
           <a href="/contact.html">Contact Me</a>
-          <a href={resumePNG} className="resume-btn" download="FiratKaya_CV.png">Resume</a>
+          <a href={resumePNG} className="resume-btn" download="ResumeFiratKaya.png">Resume</a>
         </div>
       </div>
     </nav>
