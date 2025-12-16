@@ -9,7 +9,8 @@
       { "src": "/projects/steering-wheel-shop", "dest": "/projects/steering-wheel-shop.html" },
       { "src": "/projects/exhuarire", "dest": "/projects/exhuarire.html" },
       { "src": "/projects/car-wash-tracker", "dest": "/projects/car-wash-tracker.html" },
-      { "src": "/projects/gates-of-hell", "dest": "/projects/gates-of-hell.html" }
+      { "src": "/projects/gates-of-hell", "dest": "/projects/gates-of-hell.html" },
+      { "src": "/projects/volturiano", "dest": "/index.html" }
     ]
   }
   
