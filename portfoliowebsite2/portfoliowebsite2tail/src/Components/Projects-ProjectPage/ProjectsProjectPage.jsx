@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProjectsProjectPage.css";
 import project1Image from "./Wacky4.png";
+import volturianoImage from "../Projects/VolturianoImg/Skärmbild 2025-12-16 002531.png";
 import brainrotImage from "./BrainrotVideoGeneratorWebsite.png";
 import project3Image from "./BmwShopify.png";
 import Project4Image from "./DigDig1.png";
@@ -30,19 +31,21 @@ const ProjectsProjectPage = () => {
 
       <div className="projets-item">
         <div className="project-image">
-          <img src={brainrotImage} alt="Project preview" />
+          <img src={volturianoImage} alt="Project preview" />
           {/* Gradient overlay */}
           <div className="gradient-overlay"></div>
         </div>
 
         <div className="project-content">
-          <h3 className="project-title">Brainrot Video Generator</h3>
-          <p className="project-stack">Python | ElevenLabs | MoviePy | Whisper | HTML</p>
-          <a href="/projects/brainrot-generator" className="LearnMoreButton">
+          <h3 className="project-title">Volturiano</h3>
+          <p className="project-stack">React | TypeScript | Three.js | Supabase | Tailwind CSS</p>
+          <a href="/projects/volturiano" className="LearnMoreButton">
             <span>Learn more</span>
           </a>
         </div>
       </div>
+
+
 
       <div className="projets-item">
         <div className="project-image">
@@ -55,6 +58,21 @@ const ProjectsProjectPage = () => {
           <h3 className="project-title">Custom Steering Wheel Shop</h3>
           <p className="project-stack">React | Tailwind CSS | Node.js | Figma</p>
           <a href="/projects/steering-wheel-shop" className="LearnMoreButton">
+            <span>Learn more</span>
+          </a>
+        </div>
+      </div>
+      <div className="projets-item">
+        <div className="project-image">
+          <img src={brainrotImage} alt="Project preview" />
+          {/* Gradient overlay */}
+          <div className="gradient-overlay"></div>
+        </div>
+
+        <div className="project-content">
+          <h3 className="project-title">Brainrot Video Generator</h3>
+          <p className="project-stack">Python | ElevenLabs | MoviePy | Whisper | HTML</p>
+          <a href="/projects/brainrot-generator" className="LearnMoreButton">
             <span>Learn more</span>
           </a>
         </div>

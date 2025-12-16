@@ -15,6 +15,7 @@ import SteeringWheelShop from './Components/ProjectPages/SteeringWheelShop.jsx'
 import Exhuarire from './Components/ProjectPages/Exhuarire.jsx'
 import GatesOfHell from './Components/ProjectPages/GatesOfHell.jsx'
 import Terrahutton from './Components/ProjectPages/Terrahutton.jsx'
+import Volturiano from './Components/ProjectPages/Volturiano.jsx'
 
 // Get the current page path
 const path = window.location.pathname;
@@ -76,6 +77,14 @@ const getContent = () => {
           <div className="app-container">
             <Navbar />
             <Terrahutton />
+            <Footer />
+          </div>
+        );
+      case '/projects/volturiano':
+        return (
+          <div className="app-container">
+            <Navbar />
+            <Volturiano />
             <Footer />
           </div>
         );

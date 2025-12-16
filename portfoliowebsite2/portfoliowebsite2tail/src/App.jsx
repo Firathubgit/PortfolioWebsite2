@@ -15,7 +15,6 @@ import cssLogo from "./css.svg";
 import figmaLogo from "./figma.svg";
 import gitLogo from "./git.svg";
 import githubLogo from "./github.svg";
-import githubLightLogo from "./githublight.svg";
 import godotEngineLogo from "./godotengine.svg";
 import htmlLogo from "./html.svg";
 import javaLogo from "./java.svg";
@@ -30,6 +29,18 @@ import unityPng from "./unity.png";
 import unitySvg from "./unity.svg";        // Different from unity.png, so including both
 import vscodeLogo from "./vscode.svg";
 import vuejsLogo from "./vuejs.svg";
+import matlabLogo from "./MATLAB.png";
+import mongodbLogo from "./MongoDB.png";
+import mysqlLogo from "./MySQL.png";
+import nextjsLogo from "./Next.js.png";
+import nodejsLogo from "./Node.js.png";
+import postgresqlLogo from "./PostgresSQL.png";
+import reactLogo from "./React.png";
+import threejsLogo from "./Three.js.png";
+import vscodePngLogo from "./Visual Studio Code (VS Code).png";
+import dockerLogo from "./Docker.png";
+import archLinuxLogo from "./Arch Linux.png";
+import mayaLogo from "./Autodesk Maya.png";
 
 function App() {
   /* 
@@ -46,7 +57,6 @@ function App() {
     figmaLogo,
     gitLogo,
     githubLogo,
-    githubLightLogo,
     godotEngineLogo,
     htmlLogo,
     javaLogo,
@@ -61,6 +71,18 @@ function App() {
     unitySvg,
     vscodeLogo,
     vuejsLogo,
+    reactLogo,
+    nextjsLogo,
+    nodejsLogo,
+    threejsLogo,
+    mongodbLogo,
+    mysqlLogo,
+    postgresqlLogo,
+    dockerLogo,
+    matlabLogo,
+    archLinuxLogo,
+    mayaLogo,
+    vscodePngLogo,
   ];
 
   return (
