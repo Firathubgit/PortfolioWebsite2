@@ -1,48 +1,20 @@
 import React from 'react';
 import ImageCarousel from './ImageCarousel';
-import volturiano1 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002531.png';
-import volturiano2 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 003842.png';
-import volturiano3 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002831.png';
-import volturiano4 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002738.png';
-import volturiano5 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002716.png';
-import volturiano6 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002701.png';
-import volturiano7 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002644.png';
-import volturiano8 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002622.png';
-import volturiano9 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002548.png';
-import volturiano10 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002453.png';
-import volturiano11 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002431.png';
-import volturiano12 from '../Projects/VolturianoImg/Skärmbild 2025-12-16 002334.png';
-import volturiano13 from '../Projects/VolturianoImg/Skärmbild 2025-11-17 181538.png';
-import volturiano14 from '../Projects/VolturianoImg/Skärmbild 2025-11-17 135804.png';
-import volturiano15 from '../Projects/VolturianoImg/Skärmbild 2025-11-16 145437.png';
-import volturiano16 from '../Projects/VolturianoImg/Skärmbild 2025-11-16 091405.png';
-import volturiano17 from '../Projects/VolturianoImg/Skärmbild 2025-11-16 091320.png';
 import './ProjectPages.css';
 
 const Volturiano = () => {
   const images = [
-    volturiano1,
-    volturiano2,
-    volturiano3,
-    volturiano4,
-    volturiano5,
-    volturiano6,
-    volturiano7,
-    volturiano8,
-    volturiano9,
-    volturiano10,
-    volturiano11,
-    volturiano12,
-    volturiano13,
-    volturiano14,
-    volturiano15,
-    volturiano16,
-    volturiano17
+    '/Skärmbild 2026-04-19 192051.png',
+    '/Skärmbild 2026-05-09 014059.png',
+    '/Skärmbild 2026-05-22 015159.png',
+    '/Skärmbild 2026-05-27 151826.png',
+    '/Skärmbild 2026-05-03 025325.png',
+    '/Skärmbild 2026-05-06 232858.png',
   ];
 
   return (
     <div className="project-page-container">
-      <h1 className="project-page-title">VOLTURIANO</h1>
+      <h1 className="project-page-title">VOLTURIANO — AI WEBSITE BUILDER</h1>
       
       <div className="project-page-hero">
         <ImageCarousel images={images} />
@@ -63,11 +35,12 @@ const Volturiano = () => {
       <div className="project-page-content">
         <section className="project-section">
           <h2>Overview</h2>
-          <p className="project-stack">React | Vite | TypeScript | Zustand | Framer Motion | Tailwind CSS | React Three Fiber | Three.js | Supabase</p>
+          <p className="project-stack">React | Vite | TypeScript | Tailwind CSS | Supabase | Vercel | OpenAI | Google Gemini</p>
           <p>
-            VOLTURIANO is a production-ready full-stack luxury automotive platform featuring a manifest-driven 2D/3D configurator, 
-            secure Supabase backend, advanced state management, and a scalable SaaS architecture. The platform combines modern web 
-            development with 2D/3D configurators and a secure SaaS architecture for the premium and sports car industry. 
+            VOLTURIANO is a production-grade AI-powered website builder that enables users to generate, customize, and deploy 
+            premium websites through natural language prompts and a visual interface. The platform combines cutting-edge AI models 
+            with a real-time code editor, live preview, component library, and one-click deployment to Vercel — making professional 
+            web development accessible to everyone.
             <a href="https://volturiano.com" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff', textDecoration: 'underline', marginLeft: '8px' }}>Visit volturiano.com</a>
           </p>
         </section>
@@ -75,27 +48,30 @@ const Volturiano = () => {
         <section className="project-section">
           <h2>Vision & Purpose</h2>
           <p>
-            VOLTURIANO is designed as a scalable digital platform rather than a demo, with focus on architecture, state management, 
-            security, performance, and UX – the same principles used in real automotive and enterprise systems. The platform enables users to:
+            VOLTURIANO was built to democratize premium web design. Instead of hiring developers or using rigid drag-and-drop 
+            builders, users describe their vision in plain text — and the AI generates a fully functional, beautifully designed 
+            website in seconds. The platform is designed as a scalable SaaS product with focus on:
           </p>
           <ul>
-            <li>Configure vehicles in 2D and 3D</li>
-            <li>Save and version their configurations in a personal garage</li>
-            <li>Export specifications (PDF)</li>
-            <li>Interact with a future AI-assisted recommendation system</li>
-            <li>Administrate via a role-based admin panel system</li>
+            <li>AI-driven website generation from text prompts and image references</li>
+            <li>Real-time code editor with live preview (Code/Preview toggle)</li>
+            <li>Curated component library with categorized UI sections (Hero, Header, Footer, Dashboard, Pricing, etc.)</li>
+            <li>One-click export: Publish to Vercel or Download as ZIP</li>
+            <li>User profiles with saved websites, components, billing, and settings</li>
+            <li>Community-driven component marketplace with user submissions and feedback</li>
           </ul>
         </section>
 
         <section className="project-section">
           <h2>Key Features</h2>
           <ul>
-            <li><strong>2D Configurator:</strong> Manifest-driven architecture with layer-based rendering (color, wheels, interior, details) and compatibility rules between selections</li>
-            <li><strong>3D Configurator:</strong> Optimized GLB model with HDRI studio lighting, real-time material and color changes, camera controls & presentation modes</li>
-            <li><strong>Secure Backend:</strong> Supabase with Row Level Security (RLS), role-based access control (RBAC), and PostgreSQL with JSONB-driven data</li>
-            <li><strong>State Management:</strong> Zustand for global state management of configurations, user data, and sessions</li>
-            <li><strong>Premium UX:</strong> Framer Motion animations, Tailwind CSS for scalable design, and optimized performance</li>
-            <li><strong>Admin Platform:</strong> Full CRUD for vehicles, options, configurator manifests, users, and RBAC-controlled views</li>
+            <li><strong>AI Website Generation:</strong> Users type a prompt (e.g. "Ask Volturiano to design a luxury real estate site...") and the AI generates a complete, styled website with React code</li>
+            <li><strong>Live Code Editor:</strong> Full in-browser code editor with file tree navigation, syntax highlighting, and real-time preview — users can switch between Code and Preview modes</li>
+            <li><strong>Component Library:</strong> 50+ premium UI components across categories (Hero, Background, Features, Header, Footer, Dashboard, Social, Pricing, etc.) — users can browse, select, and compose websites visually</li>
+            <li><strong>One-Click Deployment:</strong> Export dropdown with "Publish to Vercel" for instant deployment or "Download ZIP" for local use</li>
+            <li><strong>Template System:</strong> "Start with a Template" section offering pre-built premium website designs as starting points</li>
+            <li><strong>User Profiles:</strong> Personal dashboards showing saved websites, submitted components, billing, profile settings, followers/following</li>
+            <li><strong>Multi-Model AI:</strong> Supports multiple AI providers including Google Gemini and custom models for diverse generation capabilities</li>
           </ul>
         </section>
 
@@ -103,41 +79,41 @@ const Volturiano = () => {
           <h2>Technical Architecture</h2>
           <h3>Frontend</h3>
           <ul>
-            <li>React + Vite</li>
-            <li>TypeScript</li>
-            <li>Zustand – global state management</li>
-            <li>Framer Motion – premium animations & transitions</li>
-            <li>Tailwind CSS – scalable design system</li>
-            <li>React Three Fiber (R3F) – 3D rendering in browser</li>
-            <li>Three.js / GLB pipeline – optimized PBR rendering</li>
+            <li>React + Vite — fast build tooling and HMR</li>
+            <li>TypeScript — type-safe codebase</li>
+            <li>Tailwind CSS — utility-first styling system</li>
+            <li>Monaco Editor / CodeMirror — in-browser code editing</li>
+            <li>Sandpack / iframe preview — live website rendering</li>
+            <li>Framer Motion — premium animations & transitions</li>
           </ul>
           
-          <h3>Backend</h3>
+          <h3>Backend & Infrastructure</h3>
           <ul>
-            <li>Supabase Authentication (email, roles)</li>
-            <li>PostgreSQL (JSONB-driven data)</li>
-            <li>Row Level Security (RLS)</li>
-            <li>Storage buckets (images, renders, documents)</li>
-            <li>Realtime subscriptions</li>
-            <li>Edge Functions</li>
+            <li>Supabase — authentication, PostgreSQL database, storage, and edge functions</li>
+            <li>OpenAI & Google Gemini APIs — multi-model AI generation pipeline</li>
+            <li>Vercel — hosting and one-click deployment target</li>
+            <li>Row Level Security (RLS) — secure per-user data isolation</li>
+            <li>Edge Functions — serverless API endpoints for AI generation and export</li>
           </ul>
         </section>
 
         <section className="project-section">
-          <h2>Data Model & Security</h2>
+          <h2>Platform Ecosystem</h2>
           <p>
-            The platform includes core entities: Users, Vehicles, Configuration Manifests, Saved Builds (Garage), Options & Compatibility Rules, 
-            and Roles (RBAC). Security is implemented through Row Level Security (RLS) per user, role-based access control with four levels 
-            (user, support_admin, content_admin, super_admin), CSP & environment-based secrets handling, and no sensitive logic in the frontend.
+            VOLTURIANO goes beyond a simple website generator. It features a full ecosystem including a community component 
+            marketplace where users can submit, share, and discover UI components. Each component has metadata (author, category, 
+            variant), and users can like, save, and reuse components across projects. The platform also includes a credit-based 
+            billing system, user profiles with followers, and granular settings management.
           </p>
         </section>
 
         <section className="project-section">
           <h2>Why This Project Matters</h2>
           <p>
-            VOLTURIANO demonstrates system design at product level, advanced state management, real authentication & security, 
-            2D + 3D rendering in production, scalable SaaS architecture, and UX focus for the premium segment. It's not a "toy project" 
-            – but an engineer-driven platform case study.
+            VOLTURIANO demonstrates fullstack product engineering at scale: AI integration with multiple LLM providers, 
+            real-time code compilation and preview, a marketplace with user-generated content, secure multi-tenant SaaS 
+            architecture, and premium UX design. It's not a wrapper around an API — it's a complete platform with authentication, 
+            billing, deployment pipelines, and community features. This is a production-grade SaaS product built end-to-end.
           </p>
         </section>
       </div>
@@ -146,4 +122,3 @@ const Volturiano = () => {
 };
 
 export default Volturiano;
-
