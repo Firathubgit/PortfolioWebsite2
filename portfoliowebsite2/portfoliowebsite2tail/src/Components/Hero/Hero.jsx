@@ -1,5 +1,5 @@
 import "./Hero.css"
-import Facepic from "./EllipseFacepic.png"
+const Facepic = "/MainPic.png";
 import wave from "./waving-hand_1f44b.png"
 import githubIcon from "./github-light.svg";
 import instagramicon from "./instagram.svg";
