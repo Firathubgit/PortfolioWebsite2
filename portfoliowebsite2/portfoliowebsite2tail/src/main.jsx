@@ -26,66 +26,58 @@ const getContent = () => {
     switch (path) {
       case '/projects/car-wash-tracker':
         return (
-          <div className="app-container">
+          <div className="app-container project-route">
             <Navbar />
             <CarWashTracker />
-            <Footer />
           </div>
         );
       case '/projects/wacky-warriors':
         return (
-          <div className="app-container">
+          <div className="app-container project-route">
             <Navbar />
             <WackyWarriors />
-            <Footer />
           </div>
         );
       case '/projects/brainrot-generator':
         return (
-          <div className="app-container">
+          <div className="app-container project-route">
             <Navbar />
             <BrainrotGenerator />
-            <Footer />
           </div>
         );
       case '/projects/steering-wheel-shop':
         return (
-          <div className="app-container">
+          <div className="app-container project-route">
             <Navbar />
             <SteeringWheelShop />
-            <Footer />
           </div>
         );
       case '/projects/exhuarire':
         return (
-          <div className="app-container">
+          <div className="app-container project-route">
             <Navbar />
             <Exhuarire />
-            <Footer />
           </div>
         );
       case '/projects/gates-of-hell':
         return (
-          <div className="app-container">
+          <div className="app-container project-route">
             <Navbar />
             <GatesOfHell />
-            <Footer />
           </div>
         );
       case '/projects/terrahutton':
         return (
-          <div className="app-container">
+          <div className="app-container project-route">
             <Navbar />
             <Terrahutton />
-            <Footer />
           </div>
         );
       case '/projects/volturiano':
         return (
-          <div className="app-container">
+          <div className="app-container project-route">
             <Navbar />
             <Volturiano />
-            <Footer />
           </div>
         );
       default:
