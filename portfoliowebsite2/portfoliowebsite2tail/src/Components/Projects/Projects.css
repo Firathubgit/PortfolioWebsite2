@@ -305,3 +305,68 @@
     font-size: 0.8rem;
   }
 }
+
+/* Home-only card layout. Keep projects.html on its existing stylesheet. */
+.home-projects .projets-item {
+  width: 100%;
+}
+
+.home-projects .project-content {
+  bottom: 24px;
+  gap: 10px;
+}
+
+.home-projects .project-title {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.15;
+}
+
+.home-projects .project-stack {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.home-projects .LearnMoreButton {
+  flex-shrink: 0;
+  margin-top: 2px;
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  .home-projects .project-content {
+    bottom: 18px;
+    gap: 8px;
+  }
+
+  .home-projects .project-title {
+    font-size: 1.4rem;
+  }
+
+  .home-projects .project-stack {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-projects .project-content {
+    right: 15px;
+    bottom: 15px;
+    gap: 7px;
+  }
+
+  .home-projects .project-title {
+    font-size: 1.15rem;
+    line-height: 1.2;
+  }
+
+  .home-projects .project-stack {
+    font-size: 0.75rem;
+    line-height: 1.35;
+  }
+
+  .home-projects .LearnMoreButton {
+    margin-top: 1px;
+  }
+}

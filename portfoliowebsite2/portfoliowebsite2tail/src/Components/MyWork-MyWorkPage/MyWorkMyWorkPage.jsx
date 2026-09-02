@@ -1,4 +1,3 @@
-import React from "react";
 import "./MyWorkMyWorkPage.css";
 import terrahuttonLogo from "../../TerrahuttonLogotype_White-BOlboZwc.png";
 import startupLogo from "../../Exclusive.png";
@@ -15,7 +14,7 @@ const MyWorkMyWorkPage = () => {
                         <h3 className="work-experience-title">Volturiano</h3>
                         <p className="work-experience-dates">August 2025 - Present</p>
                     </div>
-                    <p className="work-experience-stack">Founder & Developer | Enskild Firma | React | TypeScript | Supabase | OpenAI | Vercel</p>
+                    <p className="work-experience-stack">Founder & Developer | Enskild Firma | React | TypeScript | Supabase | OpenRouter | Vercel</p>
                     <p className="work-experience-description">
                         Pursuing the AI race through my own company. Building Immortal by Volturiano — an AI-powered website builder that lets users generate, customize, and deploy premium websites through natural language. Completed private projects for clients, generating over 20k SEK in revenue. Main priority is scaling the AI website builder into a full SaaS platform.
                     </p>
