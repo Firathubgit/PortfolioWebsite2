@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
-const resumePDF = "/FiratKayaEnglishProgrammeringsCV.pdf";
+
+const resumePDF = "/FiratKayaProgrammeringsCV.pdf";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ const Navbar = () => {
           <a href="/MyWork.html">My Work</a>
           <a href="/projects.html">Projects</a>
           <a href="/contact.html">Contact Me</a>
-          <a href={resumePDF} className="resume-btn" download="FiratKayaEnglishProgrammeringsCV.pdf">Resume</a>
+          <a href={resumePDF} className="resume-btn" download="FiratKayaProgrammeringsCV.pdf">Resume</a>
         </div>
       </div>
     </nav>
