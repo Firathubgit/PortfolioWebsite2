@@ -16,6 +16,7 @@ import Exhuarire from './Components/ProjectPages/Exhuarire.jsx'
 import GatesOfHell from './Components/ProjectPages/GatesOfHell.jsx'
 import Terrahutton from './Components/ProjectPages/Terrahutton.jsx'
 import Volturiano from './Components/ProjectPages/Volturiano.jsx'
+import AndroidCarInfotainment from './Components/ProjectPages/AndroidCarInfotainment.jsx'
 
 // Get the current page path
 const path = window.location.pathname;
@@ -24,6 +25,13 @@ const path = window.location.pathname;
 const getContent = () => {
   if (path.startsWith('/projects/')) {
     switch (path) {
+      case '/projects/android-car-infotainment':
+        return (
+          <div className="app-container project-route">
+            <Navbar />
+            <AndroidCarInfotainment />
+          </div>
+        );
       case '/projects/car-wash-tracker':
         return (
           <div className="app-container project-route">

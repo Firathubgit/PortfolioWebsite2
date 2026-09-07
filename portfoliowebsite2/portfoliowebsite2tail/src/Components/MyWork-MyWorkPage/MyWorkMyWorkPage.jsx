@@ -7,6 +7,22 @@ const MyWorkMyWorkPage = () => {
         <section className="work-experience-section">
             <div className="work-experience-item">
                 <div className="work-experience-logo-container">
+                    <img src="/RealdiniStudiosLogo.png" alt="Realdini Studios Logo" className="work-experience-logo" />
+                </div>
+                <div className="work-experience-details">
+                    <div className="work-experience-header">
+                        <h3 className="work-experience-title">Realdini Studios</h3>
+                        <p className="work-experience-dates">September 2026 – Present</p>
+                    </div>
+                    <p className="work-experience-stack">Game Developer Intern | Unreal Engine | AI Storytelling</p>
+                    <p className="work-experience-description">
+                        Developing gameplay systems and AI-powered storytelling solutions in Unreal Engine, creating interactive and dynamic experiences.
+                    </p>
+                </div>
+            </div>
+
+            <div className="work-experience-item">
+                <div className="work-experience-logo-container">
                     <img src="/TornadoMainLogo.png" alt="Volturiano Logo" className="work-experience-logo" style={{ maxWidth: '60%', maxHeight: '60%' }} />
                 </div>
                 <div className="work-experience-details">

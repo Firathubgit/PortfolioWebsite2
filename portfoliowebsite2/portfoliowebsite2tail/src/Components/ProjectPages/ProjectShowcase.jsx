@@ -10,6 +10,8 @@ const ProjectShowcase = ({
   images,
   imageAlt = title,
   liveUrl,
+  sourceUrl,
+  showBrand = true,
   imageFit = 'cover',
 }) => {
   const slides = useMemo(
@@ -72,22 +74,36 @@ const ProjectShowcase = ({
 
         <div className="project-case-study-bottom">
           <div className="project-case-study-left">
-            <img
-              src={volturianoLogo}
-              alt="Volturiano"
-              className="project-case-study-brand"
-            />
+            {showBrand && (
+              <img
+                src={volturianoLogo}
+                alt="Volturiano"
+                className="project-case-study-brand"
+              />
+            )}
             <h1 className="project-case-study-title">{title}</h1>
-            {liveUrl && (
+            {(liveUrl || sourceUrl) && (
               <div className="project-case-study-buttons">
-                <a
-                  href={liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-case-study-preview"
-                >
-                  Preview
-                </a>
+                {liveUrl && (
+                  <a
+                    href={liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-case-study-preview"
+                  >
+                    Preview
+                  </a>
+                )}
+                {sourceUrl && (
+                  <a
+                    href={sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-case-study-preview"
+                  >
+                    GitHub
+                  </a>
+                )}
               </div>
             )}
           </div>

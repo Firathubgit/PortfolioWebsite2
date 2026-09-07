@@ -13,8 +13,13 @@ const Education = () => {
           <div className="timeline-icon"></div>
           {/* The content box */}
           <div className="timeline-content">
-            <h3>Högskolan väst</h3>
-            <h4>Datateknik ingeniör 180 HP | 2024 - 2027</h4>
+            <div className="education-heading">
+              <img src="/hogskolan-vast.png" alt="Högskolan Väst logo" className="education-logo" />
+              <div>
+                <h3>Högskolan väst</h3>
+                <h4>Datateknik ingeniör 180 HP | 2024 - 2027</h4>
+              </div>
+            </div>
             <p>
               Datateknikingenjör 180 HP (2024–2027) med fokus på modern 
               systemutveckling och programmering. Har lärt mig grundläggande 
@@ -30,8 +35,13 @@ const Education = () => {
         <div className="timeline-item">
           <div className="timeline-icon"></div>
           <div className="timeline-content">
-            <h3>LBS Kreativa Gymnasiet</h3>
-            <h4>Teknik Programmet | augusti 2021 - juni 2024</h4>
+            <div className="education-heading">
+              <img src="/lbs.png" alt="LBS Kreativa Gymnasiet logo" className="education-logo" />
+              <div>
+                <h3>LBS Kreativa Gymnasiet</h3>
+                <h4>Teknik Programmet | augusti 2021 - juni 2024</h4>
+              </div>
+            </div>
             <p>
               Tog studenten 24–06–05. Programmering – utbildningen APP och 
               webbutveckling inom information och medieteknik inom 
@@ -46,13 +56,18 @@ const Education = () => {
 
       <h3 className="Certificates-section-title">Certificates</h3>
 
-      <div className="timeline">
+      <div className="timeline certificates-timeline">
         {/* === Cisco CCNA 1 Certificate === */}
         <div className="timeline-item">
           <div className="timeline-icon"></div>
           <div className="timeline-content">
-            <h3>Cisco CCNA 1</h3>
-            <h4>CCNA 1 Certificate | 2025</h4>
+            <div className="education-heading">
+              <img src="/cisco.png" alt="Cisco logo" className="education-logo" />
+              <div>
+                <h3>Cisco CCNA 1</h3>
+                <h4>CCNA 1 Certificate | 2025</h4>
+              </div>
+            </div>
             <p>
               Completed the CCNA 1 certification in 2025, gaining foundational 
               knowledge in networking, including network fundamentals, IP 
@@ -65,8 +80,13 @@ const Education = () => {
         <div className="timeline-item">
           <div className="timeline-icon"></div>
           <div className="timeline-content">
-            <h3>Linux Unhatched – Cisco Networking Academy</h3>
-            <h4>Linux Unhatched Certificate | 2025</h4>
+            <div className="education-heading">
+              <img src="/arch-linux.png" alt="Arch Linux logo" className="education-logo" />
+              <div>
+                <h3>Linux Unhatched – Cisco Networking Academy</h3>
+                <h4>Linux Unhatched Certificate | 2025</h4>
+              </div>
+            </div>
             <p>
               Completed Cisco's Linux Unhatched course covering core CLI and system operations.
             </p>
@@ -77,8 +97,13 @@ const Education = () => {
         <div className="timeline-item">
           <div className="timeline-icon"></div>
           <div className="timeline-content">
-            <h3>Cisco CCNA 2</h3>
-            <h4>CCNA 2 Certificate | 2026</h4>
+            <div className="education-heading">
+              <img src="/cisco.png" alt="Cisco logo" className="education-logo" />
+              <div>
+                <h3>Cisco CCNA 2</h3>
+                <h4>CCNA 2 Certificate | 2026</h4>
+              </div>
+            </div>
             <p>
               Completed the CCNA 2 certification in 2026, advancing my knowledge 
               in networking, including routing and switching essentials, 

@@ -2,7 +2,7 @@ import ProjectShowcase from './ProjectShowcase';
 
 const Volturiano = () => (
   <ProjectShowcase
-    title="Volturiano Vector Search Agent"
+    title="Volturiano Agent"
     images={[
       '/volturiano-f1-builder.png',
       '/Skärmbild 2026-04-19 192051.png',

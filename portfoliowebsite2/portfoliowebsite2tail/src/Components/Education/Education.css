@@ -226,3 +226,86 @@
     line-height: 1.4;
   }
 }
+
+/* Separate CV-style left rules, ending with each entry's content. */
+.Education-section .timeline {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.Education-section .timeline-item {
+  border-left: 0;
+  padding-left: 25px;
+}
+
+.Education-section .timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  border-radius: 999px;
+  background-color: #ffffff;
+}
+
+.Education-section .timeline-icon {
+  display: none;
+}
+
+.Education-section .timeline-content {
+  padding-left: 0;
+  width: 100%;
+}
+
+.Education-section .timeline-content p {
+  margin-bottom: 0;
+}
+
+.education-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.education-heading > div {
+  min-width: 0;
+}
+
+.education-heading .education-logo {
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.certificates-timeline .education-logo {
+  width: 56px;
+  height: 56px;
+}
+
+.education-heading h4 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .Education-section .timeline-item {
+    padding-left: 15px;
+  }
+
+  .education-heading {
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .education-heading .education-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .certificates-timeline .education-logo {
+    width: 40px;
+    height: 40px;
+  }
+}

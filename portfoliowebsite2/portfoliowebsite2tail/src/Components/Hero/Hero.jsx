@@ -54,7 +54,7 @@ const Hero = () => {
                         <p className="location">📍 Sweden, Göteborg</p>
 
                         <p className="bio">
-                            I'm a 20 year old Full stack programmer. I have been programing for more than 4 years of experience. Ive created everything from games, websites and apps.
+                            I'm a 21 year old Full stack programmer. I have been programing for more than 6 years of experience. Ive created everything from games, websites and apps.
                         </p>
                     </div>
                 </div>
