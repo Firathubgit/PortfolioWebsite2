@@ -19,9 +19,8 @@
 
 This is my personal portfolio, showcasing my background as a full-stack developer with experience across games, web and mobile/automotive apps. It presents my tech stack, selected projects with dedicated case-study pages, education and certificates, and ways to get in touch, along with a downloadable CV.
 
-<div align="center">
-  <img src="docs/assets/demo.webp" alt="Portfolio walkthrough" width="860" />
-</div>
+![Uploading Portfolio_Website_Tour.gif…]()
+
 
 ## Features
 
